@@ -5,6 +5,11 @@ $wievport: 980px;
 $dark: #101010;
 $gray: #8799a2;
 $igray: #94a6ac;
+$blue: #00c8c6;
+$pink: #ff257e;
+$gren: #007d7c;
+$grend: #004f4e;
+$while: #dae6eb;
 $white: white;
 
 @mixin ibw() {
@@ -78,12 +83,17 @@ h2 {
     line-height: 48px;
     text-transform: uppercase;
 }
+p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
 #maket {
     position: absolute;
-    top: 0px;
+    top: 17827px;
     left: 0;
     width: 100%;
-    background: url(../../maket3.jpg) no-repeat top center;
+    background: url(../../maket0.jpg) no-repeat top center;
     height: 17827px;
     opacity: 0.5;
     z-index: 10;
@@ -117,13 +127,13 @@ a {
     border-radius: 26px;
     line-height: 50px;
     &:hover,&:active,&.active{
-        background-color: #004f4e;
+        background-color: $grend;
     }
 }
 .line {
     width: 129px;
     height: 5px;
-    background-color: #dae6eb;
+    background-color: $while;
     display: inline-block;
     }
 header {
@@ -134,13 +144,13 @@ header {
     .btn_menu_open {
         width: 87px;
         height: 87px;
-        background-color: #00c8c6;
+        background-color: $blue;
         border-radius: 50%;
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAYCAYAAAAGXva8AAAAaUlEQVRIS2P8//+/JwMDw1wglgRiWoPnQAuSGYGWPqOThTAPPR8IS1+ALPWCBq8ErcMWaP5TIE5jpINFGFaMWkrTUB9BwTtaItEwJY2WSDQMXKDRIyif0jYgsZs+MME7WiLRMK4HpkQCAJt2PRWvtG3/AAAAAElFTkSuQmCC);
         float: left;
         margin-left: 1px;
             &:hover,&:active,&.active{
-                background-color: #ff257e;
+                background-color: $pink;
             }
         }
     .logo {
@@ -154,13 +164,13 @@ header {
     .login {
         width: 87px;
         height: 87px;
-        background-color: #00c8c6;
+        background-color: $blue;
         border-radius: 50%;
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAbCAYAAACEP1QvAAACcUlEQVRIS9WWTUgVURiGnRRui1aCuJHSVolCJRXUwpZBBSUIgoLUJvypRQWBlSnlz6o2/WhtBEFBEFSwwGUtEiyyoKhVdcONCK6CCqrb815m5NzTvXNmrsLggYeZOef7vvc7f3OOVxKjZDKZfZifhEY4AFWwAm/hBTzzPO9T1JBeVEOEO7C9AAdDfJZpe0ICo1HiRhJHuJdg/bAjQtC/siWBOy5bp7jf44cRhQM9JdDtGoFQcX+OJ62h/sr3BDyFN9AAp6ANqo3eagpaw9aAS/wKAe4aASV8g4BKKKeQaCsVg1YCV7G9V2j4XeKzOJ4xnAcJdrNQMBIYUHJG+xz2Z4sVV0/3GM7HCLYYIn6UtpdGexp7cypyXF09/411qeGxk2C/QsRTtP002v9gX7Yte57onCe62vUvT2afa6Ek9ocLVmli/3a/9xU8b0MTVBbaOtSvwgzcYouthdhlm1z7/BA2+kOdhv2uYEb7O97nYZYkXsfa5wzzbhzOQzvsjSFqm36mYhzGSOKb3fhfzxE+gdEl0Em1VUUn4H0SWDAD5ogjrGOxB+ryqH6k7jkswXv4AutQDjVQD0fgONTm8f9A3TAJ6DjOlg1xX1i3DwUyyys+pmAax7RrKIijg6gZWuCwZa+Ee4MEsuL+UOvctnv8iLoRjNXTWIWYGolO6LIcNQI65xc8f3FJxJzj73wPC4wysVQNY2Krc5pGscto0hrokngfL/2WgG4rQ8WK2n5oXKdOtxyzXJa45uUxBFdijcLFzfQ4j7hG4IE/BT946mo1FMy5rsTnQAvlWjFz7Bolfw1oN2kNZfe8vdVSYTcVl0Dc9n+2r/GrDaK/awAAAABJRU5ErkJggg==);
         float: right;
         margin-right: 1px;
             &:hover,&:active,&.active{
-                background-color: #ff257e;
+                background-color: $pink;
             }
     }
     .user {
@@ -187,13 +197,13 @@ header {
             font-weight: 700;
             line-height: 24px;
             float: left;
-            background-color: #00c8c6;
+            background-color: $blue;
             border-radius: 26px;
             color: $white;
             margin-left: 11px;
             margin-top: 6px;
             &:hover,&:active,&.active{
-                background-color: #004f4e;
+                background-color: $grend;
             }
         }
     }
@@ -244,9 +254,6 @@ header {
         text-align: center;
         width: 100%;
         color: $gray;
-        font-size: 18px;
-        
-        line-height: 24px;
         margin-top: 26px
     }
     h2 {
@@ -272,7 +279,7 @@ header {
         margin-top: 21px;
     }
     .btn {
-        background-color: #ff257e;
+        background-color: $pink;
         width: 188px;
         height: 73px;
         font-size: 18px;
@@ -281,7 +288,7 @@ header {
         margin-top: 23px;
         border-radius: 35px;
         &:hover,&:active,&.active{
-            background-color: #00c8c6;
+            background-color: $blue;
         }
     }
     .politic {
@@ -326,7 +333,6 @@ header {
     }
     p {        
         font-size: 27px;
-        font-weight: 700;
         line-height: 36px;
         margin-top: 9px;
         
@@ -334,14 +340,14 @@ header {
     .btn {
         width: 248px;
         height: 73px;
-        background-color: #007d7c;
+        background-color: $gren;
         border-radius: 36px;        
         font-size: 14px;
         font-weight: 700;
         line-height: 73px;
         margin-top: 56px;
         &:hover,&:active,&.active{
-            background-color: #00c8c6;
+            background-color: $blue;
         }
     }
     }
@@ -371,9 +377,6 @@ textarea {
         margin-top: 20px
     }
     p {        
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 24px;
         margin-top: 31px;
     }
     .block {
@@ -455,13 +458,12 @@ textarea {
             width: 436px;
             height: 251px;
             background-image: url(../../img/video_make.png);
+            float: right;
         }
         .play {
         }
         p {
             font-size: 14px;
-            font-weight: 700;
-            line-height: 18px;
             margin-top: 64px;
         }
         .btn {
@@ -472,7 +474,7 @@ textarea {
             line-height: 50px;
             margin-top: 42px;
             &:hover,&:active,&.active{
-                background-color: #004f4e;
+                background-color: $grend;
             }
         }
     }
@@ -528,9 +530,6 @@ textarea {
     .block {
         margin-top: 35px;
         p {
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 24px;
             text-align: left;
             background-position: left;
             min-height: 28px;
@@ -635,9 +634,6 @@ textarea {
         }
     }
     p {
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 24px;
     }
     p:nth-of-type(1){
         margin-top: 80px;
@@ -647,7 +643,7 @@ textarea {
     }
 }
 label {
-    background-color: #007d7c;
+    background-color: $gren;
     border-radius: 26px;
     cursor: pointer;
     font-size: 10px;
@@ -656,7 +652,7 @@ label {
     color: $white;
     @include trans();
     &:hover,&:active,&.active{
-        background-color: #004f4e;
+        background-color: $grend;
     }
     input {
         width: 100%;
@@ -682,19 +678,19 @@ label {
     .block .btn{
         width: 220px;
         height: 50px;
-        background-color: #007d7c;
+        background-color: $gren;
         border-radius: 26px;
         line-height: 50px;
         margin: 0px 13px;
         &:hover,&:active,&.active{
-            background-color: #004f4e;
+            background-color: $grend;
         }
     }
     textarea{
         width: 100%;
         max-width: 613px;
         height: 66px;
-        background-color: #dae6eb;
+        background-color: $while;
         border-radius: 29px;
         margin-top: 31px;
         margin-left: 26px;
@@ -719,9 +715,6 @@ label {
         margin-top: 29px;
     }
     p {        
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 24px;
         color: $white;
         margin-top: 49px;
     }
@@ -831,7 +824,7 @@ label {
                 width: 29px;
                 height: 29px;
                 border-radius: 50%;
-                background-color: #dae6eb;
+                background-color: $while;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -864,8 +857,6 @@ label {
     }
     .block {
         p {
-            font-size: 18px;
-            font-weight: 700;
             float: left;
             background-position: left;
             padding-left: 40px;
@@ -927,13 +918,13 @@ label {
     .btn {
         width: 308px;
         height: 73px;
-        background-color: #007d7c;
+        background-color: $gren;
         border-radius: 36px;
         font-size: 18px;
         line-height: 73px;
         margin-top: 64px;
         &:hover,&:active,&.active{
-            background-color: #004f4e;
+            background-color: $grend;
         }
     }
 }
@@ -997,9 +988,7 @@ label {
                 }
             }
             p {
-                font-weight: 700;
                 color: #6a7e88;
-                font-size: 18px;
                 text-align: left;
                 display: inline-block;
                 vertical-align: top;
@@ -1028,12 +1017,12 @@ label {
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background-color: #007d7c;
+            background-color: $gren;
             position: absolute;
             top: 50%;
             margin-top: -25px;
             &:hover,&:active,&.active{
-                background-color: #004f4e;
+                background-color: $grend;
             }
         }
         .prev {
@@ -1051,8 +1040,6 @@ label {
             display: inline-block;
             margin-top: 66px;
             p {
-                font-size: 18px;
-                font-weight: 700;
                 display: inline-block;
                 margin-top: -8px;
                 width: 100%;
@@ -1078,7 +1065,6 @@ label {
         }
         p {
             font-size: 27px;
-            font-weight: 700;
             line-height: 36px;
             margin-top: 42px;
         }
@@ -1105,13 +1091,12 @@ label {
         p {
             color: $gray;
             font-size: 27px;
-            font-weight: 700;
             line-height: 36px;
         }
         .btn {
             width: 318px;
             height: 102px;
-            background-color: #007d7c;
+            background-color: $gren;
             border-radius: 36px;
             color: $white;
             font-size: 18px;
@@ -1121,7 +1106,7 @@ label {
             margin: 52px 13px 0px;
             padding-top: 29px;
             &:hover,&:active,&.active{
-                background-color: #004f4e;
+                background-color: $grend;
             }
         }
     }
@@ -1150,19 +1135,16 @@ label {
         .btn {
             height: 50px;
             border-radius: 26px;
-            background-color: #007d7c;
+            background-color: $gren;
             color: $white;
             line-height: 50px;
             margin: 0 9px;
             &:hover,&:active,&.active{
-                background-color: #004f4e;
+                background-color: $grend;
             }
         }
     }
     p {
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 24px;
         margin-top: 36px;
     }
     .vid {
@@ -1222,9 +1204,6 @@ label {
     .play {
     }
     p {
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 24px;
         margin-top: 34px;
     }
     .btn_next {
@@ -1239,7 +1218,7 @@ label {
 }
 .pop {
     height: 1080px!important;
-    background-color: #12acaa;
+    background-color: rgba(18, 172, 170, 0.9);
     text-align: center;
     font-size: 0;
     @include sec();
@@ -1256,7 +1235,7 @@ label {
     .close {
         width: 87px;
         height: 87px;
-        background-color: #00c8c6;
+        background-color: $blue;
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAABO0lEQVRIS72USwrCMBCGG8EjuPFGLt35QMFHwZV4FHEl+AJd6MV0oUcQjP+UaUljMkk2CiE1nfn6TyZ/lNa6m2XZFoN+K6XUlZ+TJnD6SFhz0kJh4Yk/LV74YJ4DfkqhgjFB/B6jwXkvG0zrSXAHlBgFeIiHs/G1aLgHSsLGiigImGLapcAFaI6tPBbgVHgISrwKHAuPgf6AQ3Auzux+2Y+ifPMk1RQHtkXzezOHGvUDdSoOwE1RXqgINraFSrcrI/VkpFr5wa0wVJOjDh7wTHKoc49ZrW1TU1DZNK/9/9c8wYU5S3Y5VD5uErRsVExM7VTEJgRMVCkPXULOwx8Dp2tzgMALRnlJe21qHwuhypHvovcqjYQXF/0dwW1OEG1qQwX7PwjcQQDZtomxRPdvPoC0Dk4P7zcYb7L7F0tG0/FjglMnAAAAAElFTkSuQmCC);
         @include trans();
         position: absolute;
@@ -1264,7 +1243,7 @@ label {
         top: 75px;
         border-radius: 50%;
         &:hover,&:active,&.active{
-            background-color: #ff257e;
+            background-color: $pink;
         }
     }
     h2 {
@@ -1289,7 +1268,7 @@ label {
         .sub {
             width: 248px;
             height: 73px;
-            background-color: #007d7c;
+            background-color: $gren;
             border-radius: 36px;
             margin-top: 22px;
             color: $white;
@@ -1320,9 +1299,38 @@ label {
                 padding: 0px 45px;
                 margin: 5px 0px;
                 &:hover,&:active,&.active{
-                    background-color: #004f4e;
+                    background-color: $grend;
                 }
             }
         }
+    }
+}
+.popap {
+    background-color: $white;
+    width: 400px;
+    height: 170px;
+    z-index: 11px;
+    position: relative;
+    margin-top: 457px;
+    border-radius: 36px;
+    text-align: center;
+    padding-top: 48px;
+    .close_p {
+        width: 47px;
+        height: 47px;
+        position: absolute;
+        top: -19px;
+        right: -19px;
+        background-color: $blue;
+        border-radius: 50%;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABX0lEQVQ4T6WUOy8FURDH93SiJm7wZRCvaNSeV69SiijkfgS9t5ZGvIIvgxBaj279/pvZa/bsrg02mZzZOXN+O6+zIU3T9SRJNpAzZDWE8Mza+HBuAKdtZAbpBAwfKD128op1qQlmkH18J+zcp0AnvMy6EG7Ql4E9VIWF/xD2PWTM7Z8K1MKwi0y6jVuD3XsYvsMGGXX2S/R2kAGHQYONOweluUJkj85nx6Uj83UGwScDmaO+prxHHOwCfdHeD1in3N4duuqZRd0FOZjy96GrZnp8TUqpF0AGU80EyzvigshUpaxmPPmNEshg/axHiK+ZtlSTeSAvMb0O1IfjcQ1oDtBrI8jG4X+p1czJ74ptkLj9GrYFS+OQ1Q9tuf01A9kdNmtA1dB+D2TNFSl8LS/sD1G3qy5t5T2LYPHQZpf2Dadec1SoGvvCsMWttixUz3zO3gVaw7CFnCN/+bFNc27zC0fcpGFOt/H4AAAAAElFTkSuQmCC);
+        &:hover,&:active,&.active{
+            background-color: $pink;
+        }
+    }
+    p {
+        font-size: 24px;
+        line-height: 36px;
+        color: #141414;
     }
 }
