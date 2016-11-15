@@ -113,7 +113,9 @@
                 <div class="vid">
                     <div class="play"></div>
                 </div>
-                <p>Посмотри примеры 20 офферов, <br>которые дают конверсию <br>более 7,5%</p>
+                <p>Посмотри примеры 20 офферов,
+                    <br>которые дают конверсию
+                    <br>более 7,5%</p>
                 <a href="" class="btn">Посмотреть примеры офферов</a>
             </div>
             <div class="write_offer">
@@ -172,8 +174,13 @@
                 <a href="" class="yandex">Яндекс почта</a>
                 <a href="" class="mail">Mail почта</a>
             </div>
-            <p>Для продолжения работы необходимо <br>подтвердить электронный адрес, для этого <br>перейдите в свою почту и найдите письмо с <br>отправителем ДНК АТОМ.</p>
-            <p>В тексте письма перейдите по ссылке <br> подтверждение и продолжите работу с <br>сервисом.</p>
+            <p>Для продолжения работы необходимо
+                <br>подтвердить электронный адрес, для этого
+                <br>перейдите в свою почту и найдите письмо с
+                <br>отправителем ДНК АТОМ.</p>
+            <p>В тексте письма перейдите по ссылке
+                <br> подтверждение и продолжите работу с
+                <br>сервисом.</p>
         </div>
     </section>
     <section class="sec7">
@@ -195,20 +202,19 @@
                 <a href="" class="btn">Да, есть</a>
                 <a href="" class="btn">увы, нет</a>
             </div>
-            <p>Загрузите Ваш логотип в нужном формате</p>
+            <p>Загрузите Ваш логотип в
+                <br>нужном формате</p>
             <div class="block">
-                <div class="block">
-                    <label for="">
-                        <input type="file"> Загрузить логотип
-                    </label>
-                    <div class="vid">
-                        <div class="play"></div>
-                    </div>
+                <label for="">
+                    <input type="file"> Загрузить логотип
+                </label>
+                <div class="vid">
+                    <div class="play"></div>
                 </div>
-                <div class="block">
-                    <span>Так он будет выглядеть:</span>
-                    <div class="logo_img"></div>
-                </div>
+            </div>
+            <div class="block">
+                <span>Так он будет выглядеть:</span>
+                <div class="logo_img"></div>
             </div>
             <a href="" class="btn_next">Следующий шаг</a>
         </div>
@@ -216,29 +222,27 @@
     <section class="sec8">
         <div>
             <h2>Причина оставить заявку</h2>
-            <div class="block">
-                <div class="block">
-                    <div class="vid">
-                        <div class="play"></div>
-                    </div>
-                </div>
-                <div class="block">
-                    <textarea name="discr" placeholder="Введите причину, по которой вам будут оставлять заявки"></textarea>
-                    <textarea name="discr" placeholder="Введите надпись на кнопке"></textarea>
-                </div>
+            <div class="vid">
+                <div class="play"></div>
             </div>
+            <textarea name="discr" placeholder="Введите причину, по которой вам будут оставлять заявки"></textarea>
+            <textarea name="discr" placeholder="Введите надпись на кнопке"></textarea>
             <h2>Какие данные вы хотите получить от клиента?</h2>
             <div class="block">
                 <a href="" class="r_btn">Имя</a>
+            </div>
+            <div class="block">
                 <a href="" class="r_btn">Телефон</a>
-                <a href="" class="r_btn active">e-mail</a>
+            </div>
+            <div class="block">
+                <a href="" class="r_btn active">E-mail</a>
             </div>
             <a href="" class="btn_next">Следующий шаг</a>
         </div>
     </section>
     <section class="sec9">
         <div>
-            <h2>Осталось выбрать фото / видео фон для сайта вашей</h2>
+            <h2>Осталось выбрать фото / видео <br>фон для сайта вашей</h2>
             <div class="vid">
                 <div class="play"></div>
             </div>
@@ -258,19 +262,24 @@
     <section class="sec10">
         <div>
             <img src="img/monitor.png" alt="" width="172" height="172">
-            <h2>Настало время посмотреть сайт!</h2>
+            <h2>Настало время <br>посмотреть <br>сайт!</h2>
             <a href="" class="btn">Посмотреть сайт</a>
         </div>
     </section>
-    <section class="sec11">
-        <div class="laptop">
-            <div class="site"></div>
-        </div>
+    <section class="sec11">        
         <div>
-            <h2>Отзывы пользователей DNK ATOM</h2>
+            <div class="laptop">
+                <div class="site"></div>
+            </div>
+            <h2>Отзывы пользователей <br>DNK ATOM</h2>
             <div class="slider_w">
                 <div class="slider">
                     <div class="slid">
+                        <div class="block">
+                            <div class="vid">
+                                <div class="play"></div>
+                            </div>
+                        </div>
                         <div class="block">
                             <div class="block">
                                 <p>Сайт</p>
@@ -283,11 +292,6 @@
                             <div class="block">
                                 <p>Цена</p>
                                 <span>29 000 руб.</span>
-                            </div>
-                        </div>
-                        <div class="block">
-                            <div class="vid">
-                                <div class="play"></div>
                             </div>
                         </div>
                     </div>
@@ -303,18 +307,17 @@
                 <div class="vid">
                     <div class="play"></div>
                 </div>
-                <p>Подключи сайт к своему домену, привяжи его к СРМ системе
-                    <br>и настрой эффективную компанию на Яндекс Директ</p>
+                <p>Подключи сайт к своему домену, привяжи <br>его к СРМ системе и настрой эффективную <br>компанию на Яндекс Директ</p>
             </div>
-            <h2>Ты сделаешь все это всего <br>за 1 час И уже сегодня получишь <br>первых клиентов!</h2>
+            <h2>Ты сделаешь все это всего за <br>1 час И уже сегодня получишь <br>первых клиентов!</h2>
+            <h3>Открой доступ к продолжению <br>пошагового курса по привлечению <br>клиентов в твой бизнес всего <br>за 179 руб. !</h3>
             <div class="block">
                 <div class="line"></div>
             </div>
-            <h3>Открой доступ к продолжению пошагового <br>курса по привлечению клиентов в твой <br>бизнес всего за 179 руб. !</h3>
             <div class="block_b">
                 <p>Бонусом ты получишь еще 15 крутых
                     <br>примеров продающих видео и офферов</p>
-                <a href="" class="btn">Мне не нужны <br>клиенты</a>
+                <a href="" class="btn">Мне нужны клиенты. <br>Продолжить за 179 руб.</a>
                 <a href="" class="btn">Мне нужны клиенты. <br>Продолжить за 179 руб.</a>
             </div>
         </div>
