@@ -11,7 +11,8 @@ $gren: #007d7c;
 $grend: #004f4e;
 $while: #dae6eb;
 $white: white;
-
+$inpc: #d9e6eb;
+$grenu: #1b4c4d;
 @mixin ibw() {
     text-align: center;
     font-size: 0;
@@ -68,7 +69,7 @@ sup:after,sup:before,a:after,a:before,br:after,br:before,img:after,img:before,sp
 h1,h2,h3,h4,h5{font-size:1em;font-weight:inherit;text-align:center;font-family: $afont;font-weight: 700;letter-spacing: 0.01em;}
 body{font-family:$fontfamily,sans-serif;font-weight:400;color: $dark;padding: 0px 40px;}
 a{text-decoration:none;color:inherit;outline:0!important; display: inline-block;vertical-align: top;}
-.link span, .button,input,textarea{outline: none;border: none;resize: none;font-family: $ifont;font-style: italic; color: $igray;font-size: 16px;}
+.link span, .button,input,textarea{outline: none;border: none;resize: none;font-family: $ifont;font-style: italic; color: $igray;font-size: 18px;}
 section{
     @include sec();
     text-align: center;
@@ -84,7 +85,7 @@ header {
 .block {
     @include ibw();
 }
-h2 {
+h2, h3 {
     font-size: 22px;
     line-height: 36px;
     text-transform: uppercase;
@@ -115,7 +116,7 @@ a {
     display: inline-block;
     vertical-align: top;
     color: $white;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -123,14 +124,14 @@ a {
     display: inline-block;
     vertical-align: top;
     color: $white;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    width: 210px;
-    height: 50px;
+    width: 219px;
+    height: 66px;
     background-color: #00c9c6;
-    border-radius: 26px;
-    line-height: 50px;
+    border-radius: 36px;
+    line-height: 66px;
     &:hover,&:active,&.active{
         background-color: $grend;
     }
@@ -216,6 +217,8 @@ header {
 .vid {
     display: inline-block;
     position: relative;
+    width: 400px;
+    height: 258px;
 }
 .play {
         width: 87px;
@@ -236,7 +239,7 @@ header {
     }
 .sec1 {
     background-image: url(../../img/bg_sec1.jpg);
-    padding: 173px 0px 137px;
+    padding: 173px 0px 55px;
     h1 {
         width: 100%;
         font-size: 48px;
@@ -262,24 +265,19 @@ header {
     h2 {
         margin-top: 38px;
     }
-    .block {
-        margin-top: 33px;
-        .vid {
-            width: 400px;
-            height: 301px;
-            background-image: url(../../img/prev_atom.png);
-        }
-        .play {
-        }
-        
+    .vid {
+        margin-top: 58px;
+        height: 301px;
+        background-image: url(../../img/prev_atom.png);
+    }
+    .play {
     }
     h3 {
         width: 100%;
         color: $gray;
         font-size: 24px;
         line-height: 48px;
-        text-transform: uppercase;
-        margin-top: 21px;
+        margin-top: 41px;
     }
     .btn {
         background-color: $pink;
@@ -288,21 +286,19 @@ header {
         font-size: 18px;
         font-weight: 700;
         line-height: 73px;
-        margin-top: 23px;
+        margin: 21px 5% 0px;
         border-radius: 35px;
         &:hover,&:active,&.active{
             background-color: $blue;
         }
     }
     .politic {
-        position: absolute;
-        bottom: 5px;
         font-size: 14px;
         line-height: 24px;
         text-decoration: underline;
         color: $gray;
-        text-align: left;
-        left: 0px;
+        text-align: center;
+        margin: 47px 5% 0px;
         &:hover,&:active,&.active{
             text-decoration: none;
         }
@@ -311,34 +307,29 @@ header {
 }
 .sec2 {
     background-image: url(../../img/bg_sec2.jpg);
-    padding: 169px 0px 248px;
+    padding: 165px 0px 71px;
     h2 {
         color: $white;
     }
-    p {
-        font-size: 27px;
+    p:nth-of-type(1) {
+        font-size: 24px;
         line-height: 36px;
         color: $white;
-        margin-top: 83px
+        font-weight: 400;
+        margin-top: 36px
     }
-    .block {
-        margin-top: 84px;
-        display: inline-block;
-        vertical-align: top;
-        width: 53%;
     .vid {
-        width: 516px;
-        height: 291px;
+        margin-top: 53px;
+        height: 301px;
         background-image: url(../../img/vid_klient.png);
-        float: left;
     }
     .play {
     }
-    p {        
+    p:nth-of-type(2) {        
         font-size: 27px;
         line-height: 36px;
-        margin-top: 9px;
-        
+        margin-top: 57px;
+        color: white;
     }
     .btn {
         width: 248px;
@@ -348,59 +339,48 @@ header {
         font-size: 14px;
         font-weight: 700;
         line-height: 73px;
-        margin-top: 56px;
+        margin-top: 52px;
         &:hover,&:active,&.active{
             background-color: $blue;
         }
-    }
-    }
-    .block:nth-of-type(2){
-        width: 47%;
     }
 }
 textarea:-moz-placeholder { color: $igray; }
 textarea::-webkit-input-placeholder { color: $igray; }
 textarea {
-    background-color: #d9e6eb;
+    background-color: $inpc;
     border-radius: 26px;
     font-weight: 600;
-    padding: 23px 34px 10px;
+    padding: 24px 29px 10px;
     }
 .sec3 {
     background-color: white;
-    padding: 293px 0px 272px;
+    padding: 145px 0px 49px;
     h2 {
-        font-size: 48px;
-    }
-    h3 {        
-        font-size: 30px;
-        font-weight: 700;
+        font-size: 36px;
         line-height: 48px;
-        text-transform: uppercase;
-        margin-top: 20px
     }
-    p { 
-        margin-top: 31px;
-    }
-    .block {
-        margin-top: 28px;
+    h3 {
+        margin-top: 22px
     }
     .vid {
-        width: 346px;
-        height: 221px;
+        margin-top: 33px;
         background-image: url(../../img/video_discr.png);
-        float: left;
-        margin-left: 2px
     }
     .play {
     }
+    p { 
+        margin-top: 39px;
+        font-size: 22px;
+    }
     textarea {
-        width: 603px;
-        height: 221px;
-        float: right;  
+        margin-top: 25px;
+        width: 100%;
+        max-width: 400px;
+        height: 261px; 
     }
     .btn_next {
-        margin-top: 46px;
+        margin-top: 38px;
     }
 }
 .offer_top .block:nth-of-type(1) .vid{
@@ -414,153 +394,134 @@ textarea {
 }
 .sec4 {
     background-image: url(../../img/bg_sec4.jpg);
-    padding: 66px 0px 178px;
+    padding: 156px 0px 59px;
     h2 {
     }
-    .vid_offer{
-        
-        .vid {        
-            width: 346px;
-            height: 221px;
+    .vid_offer{        
+        .vid {
             background-image: url(../../img/video_ofer.png);
-            margin-top: 40px;
+            margin-top: 28px;
         }
         .play {
         }
     }
     .offer_top{
-        margin-top: 55px;
+        margin-top: 16px;
         .block {
-            margin-top: 30px;
+            margin-top: 15px;            
+            border: 7px solid rgba(61, 149, 169, 0.12);
+            width: 400px;
+            height: 365px;
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 36px;
             .vid {
                 width: 159px;
                 height: 121px;
-                float: left;
+                margin-top: 20px;
             }
             .play {
             }
             textarea {
-                width: 803px;
-                height: 121px;
-                float: right;
+                margin-top: 21px;
+                width: 352px;
+                height: 171px;
             }
         }
     }
     .of_for_block {
-        margin-top: 63px;
-        .block {
-            margin-top: 39px;
-            width: 50%;
-            display: inline-block;
-            vertical-align: top;
-        }
-        .block:nth-of-type(2){
-            width: 50%;
-        }
+        margin-top: 33px;
         .vid {
-            width: 436px;
-            height: 251px;
+            margin-top: 29px;
             background-image: url(../../img/video_make.png);
-            float: right;
         }
         .play {
         }
         p {
-            font-size: 14px;
-            margin-top: 64px;
+            font-size: 18px;
+            margin-top: 35px;
+            line-height: 28px;
         }
         .btn {
-            width: 310px;
-            height: 50px;
+            width: 352px;
+            height: 66px;
             background-color: #007c7b;
-            border-radius: 26px;
-            line-height: 50px;
-            margin-top: 42px;
+            border-radius: 36px;
+            line-height: 66px;
+            margin-top: 32px;
             &:hover,&:active,&.active{
                 background-color: $grend;
             }
         }
     }
     .write_offer {
-        background-image: url(../../img/line.png);
-        width: 100%;
-        height: 368px;
-        margin-top: 93px;
-        text-align: center;
+        margin-top: 35px;
         h2 {
-            display: inline-block;
-            margin: -21px auto 13px;
-            width: 100%;
         }
         .link {
-            text-align: center;
             position: relative;
-            max-width: 883px;
+            max-width: 400px;
             width: 100%;
-            margin-top: 19px;
+            margin-top: 26px;
             display: inline-block;
             span {
-                font-size: 14px;
+                font-size: 16px;
                 position: absolute;
-                bottom: 17px;
-                right: 31px;
+                bottom: 15px;
+                right: 24px;
             }
         }
         textarea{
             width: 100%;
-        }
-        .link:nth-of-type(1) {
-            textarea {
-                height: 91px;
-            }
-        }
-        .link:nth-of-type(2) {
-            textarea {
-                height: 161px;
-            }
-        }
-        .btn_next {
-            margin-top: 80px;
-        }        
+            height: 261px;
+        }    
     }
+    .btn_next {
+        margin-top: 31px;
+    }  
 }
 .sec5 {
     background-color: white;
-    padding: 238px 0px 237px;
+    padding: 151px 0px 60px;
     h2 {
-        margin-bottom: 40px;
+    }
+    .block:nth-of-type(4) {
+        margin-top: 20px;
     }
     .block {
-        margin-top: 35px;
+        margin-top: 26px;
         p {
             text-align: left;
             background-position: left;
             min-height: 28px;
             width: 100%;
-            max-width: 284px;
-            margin-top: 22px;
+            margin-top: 10px;
             float: left;
             padding-left: 41px;
+            font-size: 22px;
+            margin-left: 41px;
         }
         .link {
-            max-width: 693px;
+            max-width: 400px;
             width: 100%;
             position: relative;
+            margin-top: 17px;
         }
         .link span{
-            color: $dark;            
-            font-size: 14px;
+            color: #070707;           
+            font-size: 18px;
             font-weight: 600;
-            position: absolute;
-            bottom: -22px;
-            left: 36px;
             text-align: left;
+            line-height: 24px;
+            margin-top: 5px;
+            float: left;
+            margin-left: 28px;
         }
         input {
             width: 100%;
-            height: 66px;
-            background-color: #d9e6eb;
-            border-radius: 26px;
+            height: 80px;
+            background-color: $inpc;
+            border-radius: 36px;
             padding-left: 35px;
         }
     }
@@ -585,38 +546,37 @@ textarea {
         }
     }
     .btn_next {
-        margin-top: 50px;
+        margin-top: 40px;
     }
 }
 .sec6 {
     background-image: url(../../img/bg_sec6.jpg);
-    padding: 173px 0px 189px;
+    padding: 162px 0px 63px;
     h2 {
         display: none;
     }
-    .vid {        
-        width: 556px;
-        height: 331px;
+    .vid {
         background-image: url(../../img/video_reg.png);
     }
     .play {
     }
     .block {
-        margin-top: 90px;
+        margin-top: 23px;
     }
     .block a {
         width: 273px;
         height: 74px;
         background-color: #e6eef1;
         border-radius: 26px;
-        background-position: 30px;
+        background-position: 35px;
         margin: 0px 10px;        
         font-size: 24px;
         font-weight: 700;
         line-height: 74px;
         text-decoration: underline;
-        padding-left: 43px;
-        color: #1b4c4d;
+        padding-left: 46px;
+        color: $grenu;
+        margin-top: 20px;
         &:hover,&:active,&.active{
             text-decoration: none;
         }
@@ -637,12 +597,14 @@ textarea {
         }
     }
     p {
+        font-size: 18px;
+        line-height: 28px;
     }
     p:nth-of-type(1){
-        margin-top: 80px;
+        margin-top: 37px;
     }
     p:nth-of-type(2){
-        margin-top: 24px;
+        margin-top: 28px;
     }
 }
 label {
@@ -799,7 +761,7 @@ label {
         }
         textarea {
             width: 603px;
-            background-color: #d9e6eb;
+            background-color: $inpc;
         }
         textarea:nth-of-type(1) {            
             height: 135px;
@@ -1048,7 +1010,7 @@ label {
                 width: 100%;
             }
             .url_site {
-                color: #1b4c4d;
+                color: $grenu;
                 font-size: 30px;
                 text-decoration: underline;
                 margin-top: 20px;

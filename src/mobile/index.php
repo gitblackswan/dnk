@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=480">
-        <title>Document</title>
-        <link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i,600i|PT+Sans+Caption:400,700|Roboto+Slab:700&amp;subset=cyrillic" rel="stylesheet">
-        <script>
-            if (screen.width <= 750) {
-                document.location = "../mobile/" + document.location.search;
-            }
-        </script>
-        <style>
-            <?php include('css/head.css');
-            ?>
-        </style>
-        <link rel="stylesheet" href="css/sass/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=480">
+    <title>Document</title>
+    <link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i,600i|PT+Sans+Caption:400,700|Roboto+Slab:700&amp;subset=cyrillic" rel="stylesheet">
+    <script>
+        if (screen.width <= 750) {
+            document.location = "../mobile/" + document.location.search;
+        }
+    </script>
+    <style>
+        <?php include('css/head.css');
+        ?>
+    </style>
+    <link rel="stylesheet" href="css/sass/style.css">
 
-        <?php include('../track/head.php'); ?>
+    <?php include('../track/head.php'); ?>
 </head>
 
 <body>
@@ -39,56 +40,50 @@
         <div>
             <h1>ДНК Бизнеса</h1>
             <span>Для предпринимателей и их бабушек</span>
-            <p>Стираем границы между обучением <br>и практикой</p>
+            <p>Стираем границы между обучением
+                <br>и практикой</p>
             <h2>Все решения по привлечению <br>и взаимодействию с<br> клиентом на одном сервисе</h2>
-            <div class="block">
-                <div class="vid">
-                    <div class="play"></div>
-                </div>
-                <h3>ДНК Атом</h3>
+            <div class="vid">
+                <div class="play"></div>
             </div>
+            <h3>ДНК Атом</h3>
             <a href="" class="btn">Начать</a>
-            <a href="" class="politic">Политика<br> конфидицеальности</a>
+            <a href="" class="politic">Политика конфидицеальности</a>
         </div>
     </section>
     <section class="sec2">
         <div>
-            <h2>Пошаговый сервис по созданию потока <br>клиентов и взаимодействия с ними</h2>
-            <p>Мы не только решим проблему привлечения клиентов,
-                <br>но и дадим тебе все инструменты для дальнейшего
-                <br>развития твоего бизнеса</h3>
-                <div class="block">
-                    <div class="vid">
-                        <div class="play"></div>
-                    </div>
-                </div>
-                <div class="block">
-                    <p>Не теряй время на видео,
-                        <br>нажимай на кнопку и
-                        <br>получи поток клиентов
-                        <br>уже сегодня!</p>
-                    <a href="" class="btn">Получить клиентов</a>
-                </div>
+            <h2>Пошаговый сервис по <br>созданию потока клиентов <br>и взаимодействия с ними</h2>
+            <p>Мы не только решим проблему
+                <br>привлечения клиентов, но и
+                <br> дадим тебе все инструменты для дальнейшего развития
+                <br>твоего бизнеса</p>
+            <div class="vid">
+                <div class="play"></div>
+            </div>
+            <p>Не теряй время на видео,
+                <br>нажимай на кнопку и
+                <br>получи поток клиентов
+                <br>уже сегодня!</p>
+            <a href="" class="btn">Получить клиентов</a>
         </div>
     </section>
     <section class="sec3">
         <div>
-            <h2>Твой сайт уже готов!</h2>
+            <h2>Твой сайт <br>уже готов!</h2>
             <h3>Осталось наполнить его информацией</h3>
-            <p>Напишите свой дескриптор</p>
-            <div class="block">
-                <div class="vid">
-                    <div class="play"></div>
-                </div>
-                <textarea name="discr" placeholder="Введите текст"></textarea>
+            <div class="vid">
+                <div class="play"></div>
             </div>
+            <p>Напишите свой дескриптор</p>
+            <textarea name="discr" placeholder="Введите текст"></textarea>
             <a href="" class="btn_next">Следующий шаг</a>
         </div>
     </section>
     <section class="sec4">
         <div>
             <div class="vid_offer">
-                <h2>Самая важная часть вашего сайта это оффер!</h2>
+                <h2>Самая важная часть вашего <br>сайта это оффер!</h2>
                 <div class="vid">
                     <div class="play"></div>
                 </div>
@@ -114,20 +109,15 @@
                 </div>
             </div>
             <div class="of_for_block">
-                <h2>Как сформулировать оффер?</h2>
-                <div class="block">
-                    <div class="vid">
-                        <div class="play"></div>
-                    </div>
+                <h2>Как сформулировать <br>оффер?</h2>
+                <div class="vid">
+                    <div class="play"></div>
                 </div>
-                <div class="block">
-                    <p>Посмотри примеры 20 офферов, которые
-                        <br>дают конверсию более 7,5%</p>
-                    <a href="" class="btn">Посмотреть примеры офферов</a>
-                </div>
+                <p>Посмотри примеры 20 офферов, <br>которые дают конверсию <br>более 7,5%</p>
+                <a href="" class="btn">Посмотреть примеры офферов</a>
             </div>
             <div class="write_offer">
-                <h2>Напишите здесь свой оффер !</h2>
+                <h2>Напишите здесь свой <br>оффер !</h2>
                 <div class="link">
                     <textarea name="discr" placeholder="Основа"></textarea>
                     <span>Не более 36 символов</span>
@@ -136,13 +126,13 @@
                     <textarea name="discr" placeholder="Преимущество"></textarea>
                     <span>Не более 90 символов</span>
                 </div>
-                <a href="" class="btn_next">Следующий шаг</a>
             </div>
+            <a href="" class="btn_next">Следующий шаг</a>
         </div>
     </section>
     <section class="sec5">
         <div>
-            <h2>Введи данные, куда будут приходить <br>звонки и заявки</h2>
+            <h2>Введи данные, куда будут <br> приходить звонки и заявки</h2>
             <div class="block">
                 <p>Телефон для заявок:</p>
                 <div class="link">
@@ -182,11 +172,8 @@
                 <a href="" class="yandex">Яндекс почта</a>
                 <a href="" class="mail">Mail почта</a>
             </div>
-            <p>Для продолжения работы необходимо подтвердить
-                <br>электронный адрес, для этого перейдите в свою почту и
-                <br>найдите письмо с отправителем ДНК АТОМ.</p>
-            <p>В тексте письма перейдите по ссылке подтверждение и
-                <br>продолжите работу с сервисом.</p>
+            <p>Для продолжения работы необходимо <br>подтвердить электронный адрес, для этого <br>перейдите в свою почту и найдите письмо с <br>отправителем ДНК АТОМ.</p>
+            <p>В тексте письма перейдите по ссылке <br> подтверждение и продолжите работу с <br>сервисом.</p>
         </div>
     </section>
     <section class="sec7">
@@ -373,11 +360,12 @@
             <a href="" class="btn_next">Настроить бизнес процессы</a>
         </div>
     </section>
-    
+
     <div id="hidden-box">
-       <div class="popap">
+        <div class="popap">
             <div class="close_p"></div>
-            <p>Данное поле заполнено <br>некорректно!</p>
+            <p>Данное поле заполнено
+                <br>некорректно!</p>
         </div>
         <div class="pop" id="login">
             <div>
@@ -432,6 +420,7 @@
         </div>
     </div>
 
-        <?php include('../track/body.php'); ?>
+    <?php include('../track/body.php'); ?>
 </body>
+
 </html>

@@ -11,7 +11,8 @@ $gren: #007d7c;
 $grend: #004f4e;
 $while: #dae6eb;
 $white: white;
-
+$inpc: #d9e6eb;
+$grenu: #1b4c4d;
 @mixin ibw() {
     text-align: center;
     font-size: 0;
@@ -358,7 +359,7 @@ header {
 textarea:-moz-placeholder { color: $igray; }
 textarea::-webkit-input-placeholder { color: $igray; }
 textarea {
-    background-color: #d9e6eb;
+    background-color: $inpc;
     border-radius: 26px;
     font-weight: 600;
     padding: 23px 34px 10px;
@@ -383,8 +384,6 @@ textarea {
         margin-top: 28px;
     }
     .vid {
-        width: 346px;
-        height: 221px;
         background-image: url(../../img/video_discr.png);
         float: left;
         margin-left: 2px
@@ -416,9 +415,7 @@ textarea {
     }
     .vid_offer{
         
-        .vid {        
-            width: 346px;
-            height: 221px;
+        .vid {
             background-image: url(../../img/video_ofer.png);
             margin-top: 40px;
         }
@@ -556,7 +553,7 @@ textarea {
         input {
             width: 100%;
             height: 66px;
-            background-color: #d9e6eb;
+            background-color: $inpc;
             border-radius: 26px;
             padding-left: 35px;
         }
@@ -613,7 +610,7 @@ textarea {
         line-height: 74px;
         text-decoration: underline;
         padding-left: 43px;
-        color: #1b4c4d;
+        color: $grenu;
         &:hover,&:active,&.active{
             text-decoration: none;
         }
@@ -789,14 +786,12 @@ label {
         }
         .vid {
             background-image: url(../../img/video_cause.png);
-            width: 346px;
-            height: 221px;
         }
         .play {
         }
         textarea {
             width: 603px;
-            background-color: #d9e6eb;
+            background-color: $inpc;
         }
         textarea:nth-of-type(1) {            
             height: 135px;
@@ -1045,7 +1040,7 @@ label {
                 width: 100%;
             }
             .url_site {
-                color: #1b4c4d;
+                color: $grenu;
                 font-size: 30px;
                 text-decoration: underline;
                 margin-top: 20px;
