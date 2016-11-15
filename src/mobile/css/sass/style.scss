@@ -100,6 +100,7 @@ p {
     height: 19020px;
     opacity: 0.5;
     z-index: 10;
+    display: none;
 }
 
 a {
@@ -179,34 +180,12 @@ header {
         display: none;
         position: absolute;
         right: 0;
-        top: 15px;
-        width: 263px;
-        .user_im {
-            float: left;
-        }
-        .user_n {
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 24px;
-            text-align: left;
-            margin-left: 5px;
-            margin-top: 1px;
-        }
-        .logout {
-            width: 83px;
-            height: 27px;
-            font-size: 14px;
-            font-weight: 700;
-            line-height: 24px;
-            float: left;
-            background-color: $blue;
-            border-radius: 26px;
-            color: $white;
-            margin-left: 11px;
-            margin-top: 6px;
-            &:hover,&:active,&.active{
-                background-color: $grend;
-            }
+        top: 0px;
+        width: 87px;
+        height: 87px;
+        .close_p {
+            top: -18px;
+            right: -18px;
         }
     }
 }
@@ -593,7 +572,6 @@ textarea {
         }
     }
     p {
-        font-size: 18px;
         line-height: 28px;
         letter-spacing: -0.1px;
     }
@@ -811,7 +789,6 @@ label {
             padding-left: 43px;
             width: 100%;
             text-align: left;
-            font-size: 18px;
         }
         textarea {
             width: 100%;
@@ -887,7 +864,7 @@ label {
 
 .sec11 {
     background-color: white;
-    padding: 165px 0px 100px;
+    padding: 165px 0px 50px;
     .laptop {
         background-image: url(../../img/iphone.png);
         min-width: 378px;
@@ -945,7 +922,6 @@ label {
             p {
                 color: #6a7e88;
                 text-align: left;
-                font-size: 18px;
                 width: 40%;
                 padding-left: 5%;
                 display: inline-block;
@@ -1019,7 +995,6 @@ label {
         .play {
         }
         p {
-            font-size: 18px;
             line-height: 28px;
             margin-top: 48px;
         }
@@ -1045,8 +1020,13 @@ label {
         margin-top: 37px;
         p {
             color: $gray;
-            font-size: 18px;
             line-height: 28px;
+        }
+        .btn:nth-of-type(1) {
+            margin-top: 36px;
+        }
+        .btn:nth-of-type(2) {
+            margin-top: 20px;
         }
         .btn {
             width: 378px;
@@ -1058,8 +1038,7 @@ label {
             font-weight: 700;
             line-height: 30px;
             text-transform: uppercase;
-            margin: 52px 13px 0px;
-            padding-top: 29px;
+            padding-top: 33px;
             &:hover,&:active,&.active{
                 background-color: $grend;
             }
@@ -1068,83 +1047,78 @@ label {
 }
 .sec12 {
     background-image: url(../../img/bg_sec12.jpg);
-    padding: 198px 0px 186px;
+    padding: 156px 0px 50px;
     h2 {
-        font-size: 30px;
-        font-weight: 700;
-        line-height: 60px;
     }
     .block:nth-of-type(1) {
-        margin-top: 17px;
+        margin-top: 4px;
     }
     .block {
         .btn:nth-of-type(1) {
-            width: 236px;
+            margin-top: 10px;
         }
         .btn:nth-of-type(2) {
-            width: 330px;
+            margin-top: 20px;
         }
         .btn:nth-of-type(3) {
-            width: 150px;
+            margin-top: 30px;
         }
         .btn {
-            height: 50px;
-            border-radius: 26px;
+            width: 100%;
+            max-width: 398px;
+            height: 66px;
+            border-radius: 36px;
             background-color: $gren;
             color: $white;
-            line-height: 50px;
-            margin: 0 9px;
+            line-height: 66px;
             &:hover,&:active,&.active{
                 background-color: $grend;
             }
         }
     }
     p {
-        margin-top: 36px;
+        margin-top: 31px;
+        line-height: 28px;
     }
     .vid {
         background-image: url(../../img/video_bind.png);
-        width: 636px;
-        height: 371px;
-        display: inline-block;
-        margin: 37px auto 0px;
+        height: 301px;
+        margin-top: 26px;
         
     }
     .play {
     }
     .btn_next {
-        margin-top: 52px;
+        margin-top: 40px;
         &:hover,&:active,&.active{
         }
     }
 }
 .sec13 {
     background-image: url(../../img/bg_sec13.jpg);
-    padding: 249px 0px 264px;
+    padding: 155px 0px 70px;
     h2 {
-        line-height: 60px;
         color: $white;
     }
     .block {
     }
     .vid {
         background-image: url(../../img/video_crm.png);
-        width: 636px;
-        height: 371px;
-        margin-top: 33px;
+        height: 301px;
+        margin-top: 19px;
     }
     .play {
     }
     .btn_next {
-        width: 250px;
-        margin-top: 52px;
+        width: 279px;
+        margin-top: 31px;
         &:hover,&:active,&.active{
         }
     }
 }
 .sec14 {
     background-image: url(../../img/bg_sec14.jpg);
-    padding: 256px 0px 204px;
+    padding: 153px 0px 67px;
     h2 {
         
     }
@@ -1152,17 +1126,18 @@ label {
     }
     .vid {
         background-image: url(../../img/video_crm_go.png);
-        width: 636px;
-        height: 371px;
-        margin-top: 39px;
+        height: 301px;
+        margin-top: 26px;
     }
     .play {
     }
     p {
         margin-top: 34px;
+        font-size: 18px;
+        line-height: 28px;
     }
     .btn_next {
-        width: 290px;
+        width: 279px;
         margin-top: 30px;
         &:hover,&:active,&.active{
         }
@@ -1172,19 +1147,21 @@ label {
     display: none;
 }
 .pop {
-    height: 1080px!important;
+    height: 1164px!important;
     background-color: rgba(18, 172, 170, 0.9);
     text-align: center;
     font-size: 0;
-    @include sec();
     padding-top: 1px;
+    width: 480px;
+    position: relative;
+    margin: 0 auto;
     &#login{
         .block {
             background-image: url(../../img/line_p.png);
-            width: 587px;
-            height: 311px;
+            width: 480px;
+            height: 343px;
             display: inline-block;
-            margin-top: 358px;
+            margin-top: 427px;
         }
     }
     .close {
@@ -1194,8 +1171,8 @@ label {
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAABO0lEQVRIS72USwrCMBCGG8EjuPFGLt35QMFHwZV4FHEl+AJd6MV0oUcQjP+UaUljMkk2CiE1nfn6TyZ/lNa6m2XZFoN+K6XUlZ+TJnD6SFhz0kJh4Yk/LV74YJ4DfkqhgjFB/B6jwXkvG0zrSXAHlBgFeIiHs/G1aLgHSsLGiigImGLapcAFaI6tPBbgVHgISrwKHAuPgf6AQ3Auzux+2Y+ifPMk1RQHtkXzezOHGvUDdSoOwE1RXqgINraFSrcrI/VkpFr5wa0wVJOjDh7wTHKoc49ZrW1TU1DZNK/9/9c8wYU5S3Y5VD5uErRsVExM7VTEJgRMVCkPXULOwx8Dp2tzgMALRnlJe21qHwuhypHvovcqjYQXF/0dwW1OEG1qQwX7PwjcQQDZtomxRPdvPoC0Dk4P7zcYb7L7F0tG0/FjglMnAAAAAElFTkSuQmCC);
         @include trans();
         position: absolute;
-        right: 0;
-        top: 75px;
+        right: 41px;
+        top: 37px;
         border-radius: 50%;
         &:hover,&:active,&.active{
             background-color: $pink;
@@ -1208,15 +1185,16 @@ label {
         vertical-align: top;
         color: $white;
         width: 100%;
-        margin-top: -24px;
+        margin-top: -20px;
     }
     form {
-        margin-top: 45px;
+        margin-top: 35px;
         input {
-            width: 493px;
-            height: 66px;
+            width: 100%;
+            max-width: 400px;
+            height: 80px;
             background-color: white;
-            border-radius: 26px;
+            border-radius: 36px;
             margin: 12px 0px;
             padding: 0px 40px;
         }
@@ -1225,7 +1203,7 @@ label {
             height: 73px;
             background-color: $gren;
             border-radius: 36px;
-            margin-top: 22px;
+            margin-top: 31px;
             color: $white;
             font-size: 14px;
             font-weight: 700;
@@ -1240,19 +1218,19 @@ label {
 .pop {
     &#menu{
         .block:nth-of-type(2) {
-            margin-top: 110px;
+            margin-top: 105px;
         }
         .block {
             display: inline-block;
             width: 100%;
             a {
-                font-size: 27px;
+                font-size: 24px;
                 font-weight: 700;
-                line-height: 70px;
+                line-height: 24px;
                 color: $white;
-                border-radius: 36px;
-                padding: 0px 45px;
-                margin: 5px 0px;
+                border-radius: 40px;
+                padding: 20px 40px;
+                margin: 8px 0px;
                 &:hover,&:active,&.active{
                     background-color: $grend;
                 }
@@ -1260,28 +1238,31 @@ label {
         }
     }
 }
-.popap {
-    background-color: $white;
-    width: 400px;
-    height: 170px;
-    z-index: 11px;
-    position: relative;
-    margin-top: 457px;
-    border-radius: 36px;
-    text-align: center;
-    padding-top: 48px;
-    .close_p {
+.close_p {
         width: 47px;
         height: 47px;
         position: absolute;
-        top: -19px;
-        right: -19px;
         background-color: $blue;
         border-radius: 50%;
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABX0lEQVQ4T6WUOy8FURDH93SiJm7wZRCvaNSeV69SiijkfgS9t5ZGvIIvgxBaj279/pvZa/bsrg02mZzZOXN+O6+zIU3T9SRJNpAzZDWE8Mza+HBuAKdtZAbpBAwfKD128op1qQlmkH18J+zcp0AnvMy6EG7Ql4E9VIWF/xD2PWTM7Z8K1MKwi0y6jVuD3XsYvsMGGXX2S/R2kAGHQYONOweluUJkj85nx6Uj83UGwScDmaO+prxHHOwCfdHeD1in3N4duuqZRd0FOZjy96GrZnp8TUqpF0AGU80EyzvigshUpaxmPPmNEshg/axHiK+ZtlSTeSAvMb0O1IfjcQ1oDtBrI8jG4X+p1czJ74ptkLj9GrYFS+OQ1Q9tuf01A9kdNmtA1dB+D2TNFSl8LS/sD1G3qy5t5T2LYPHQZpf2Dadec1SoGvvCsMWttixUz3zO3gVaw7CFnCN/+bFNc27zC0fcpGFOt/H4AAAAAElFTkSuQmCC);
         &:hover,&:active,&.active{
             background-color: $pink;
         }
+}
+.popap {
+    background-color: $white;
+    width: 400px;
+    height: 170px;
+    z-index: 11px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 482px;
+    border-radius: 36px;
+    text-align: center;
+    padding-top: 48px;
+    .close_p {
+        top: -19px;
+        right: -19px;
     }
     p {
         font-size: 24px;

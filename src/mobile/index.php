@@ -30,9 +30,8 @@
             <a href="" class="logo"></a>
             <a href="" class="login"></a>
             <div class="user">
-                <img class="user_im" src="img/ava.png" alt="" width="57" height="57">
-                <p class="user_n">Марина Хлебникова</p>
-                <a href="" class="logout">Выйти</a>
+                <img class="user_im" src="img/ava.png" alt="" width="87" height="87">
+                <div class="close_p"></div>
             </div>
         </div>
     </header>
@@ -266,7 +265,7 @@
             <a href="" class="btn">Посмотреть сайт</a>
         </div>
     </section>
-    <section class="sec11">        
+    <section class="sec11">
         <div>
             <div class="laptop">
                 <div class="site"></div>
@@ -307,7 +306,9 @@
                 <div class="vid">
                     <div class="play"></div>
                 </div>
-                <p>Подключи сайт к своему домену, привяжи <br>его к СРМ системе и настрой эффективную <br>компанию на Яндекс Директ</p>
+                <p>Подключи сайт к своему домену, привяжи
+                    <br>его к СРМ системе и настрой эффективную
+                    <br>компанию на Яндекс Директ</p>
             </div>
             <h2>Ты сделаешь все это всего за <br>1 час И уже сегодня получишь <br>первых клиентов!</h2>
             <h3>Открой доступ к продолжению <br>пошагового курса по привлечению <br>клиентов в твой бизнес всего <br>за 179 руб. !</h3>
@@ -318,7 +319,7 @@
                 <p>Бонусом ты получишь еще 15 крутых
                     <br>примеров продающих видео и офферов</p>
                 <a href="" class="btn">Мне нужны клиенты. <br>Продолжить за 179 руб.</a>
-                <a href="" class="btn">Мне нужны клиенты. <br>Продолжить за 179 руб.</a>
+                <a href="" class="btn">Мне не нужны <br>клиенты</a>
             </div>
         </div>
     </section>
@@ -330,11 +331,10 @@
                 <a href="" class="btn">Есть домен, не знаю как привязать</a>
                 <a href="" class="btn">Нет домена</a>
             </div>
-            <p>Добавьте А запись: ХХХ.ХХ.Х.ХХ к вашему домену</p>
-            <div class="block">
-                <div class="vid">
-                    <div class="play"></div>
-                </div>
+            <p>Добавьте А запись: ХХХ.ХХ.Х.ХХ к
+                <br>вашему домену</p>
+            <div class="vid">
+                <div class="play"></div>
             </div>
             <a href="" class="btn_next">Следующий шаг</a>
         </div>
@@ -357,13 +357,12 @@
                 <div class="vid">
                     <div class="play"></div>
                 </div>
-                <p>С этого момента вам открыт на 1 неделю доступ в CRM систему в
-                    <br>вашем личном кабинете</p>
+                <p>С этого момента вам открыт на 1 неделю
+                    <br>доступ в CRM систему в вашем личном кабинете</p>
             </div>
             <a href="" class="btn_next">Настроить бизнес процессы</a>
         </div>
     </section>
-
     <div id="hidden-box">
         <div class="popap">
             <div class="close_p"></div>
@@ -399,10 +398,10 @@
                     <a href="" class="menu_a">Написать свой оффер</a>
                 </div>
                 <div class="block">
-                    <a href="" class="menu_a active">Введите данные куда будут приходить звонки</a>
+                    <a href="" class="menu_a active">Введите данные куда будут <br>приходить звонки</a>
                 </div>
                 <div class="block">
-                    <a href="" class="menu_a">Есть ли у Вашей компании видео?</a>
+                    <a href="" class="menu_a">Есть ли у Вашей компании <br>видео?</a>
                 </div>
                 <div class="block">
                     <a href="" class="menu_a">Причина оставить заявку</a>
@@ -417,7 +416,7 @@
                     <a href="" class="menu_a">Отзывы пользователей DNK Atom</a>
                 </div>
                 <div class="block">
-                    <a href="" class="menu_a">Привязка сайта к Вашему домену</a>
+                    <a href="" class="menu_a">Привязка сайта к Вашему <br>домену</a>
                 </div>
             </div>
         </div>
