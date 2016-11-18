@@ -110,5 +110,5 @@ function init() {
         title: 'Fortis'
     });
 
-    map.fitBounds(bounds);//autozoom
+    map.fitBounds(bounds); //autozoom
 }

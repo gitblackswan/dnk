@@ -1,0 +1,92 @@
+.arcticmodal-container,.arcticmodal-overlay{position:fixed;left:0;top:0;right:0;bottom:0;z-index:1000}
+.arcticmodal-container{overflow:auto;margin:0;padding:0;border:0;border-collapse:collapse;}
+:first-child+html .arcticmodal-container{height:100%}
+.arcticmodal-container_i{margin:0 auto;height:100%;}
+.arcticmodal-container_i2{padding:0;margin:0;border:0;vertical-align:middle}
+#slide-viewport{
+	overflow: hidden;
+}
+#slide-viewport:not(.inited)>*{
+	display: none;
+}
+#slide-viewport>.active_ste_slide{
+	display: block;
+}
+.header.h-fixed{
+	z-index:initial;
+}
+.header.h-fixed .btn_menu_open{
+	position: fixed;
+	top: 20px;
+	left:20px;
+	z-index: 4;
+}
+.header.h-fixed .login{
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 4;
+	transition: background-color 0.25s!important;
+}
+.header.h-fixed .logo{
+	display: none;
+}
+.video_btn{
+	overflow: hidden;
+}
+.video_btn iframe{
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+.error-input{
+	border-color: red!important;
+	background-color: #ffebeb!important;
+}
+span.error-over{
+	color: red!important;
+}
+
+body.scroll_blocked{
+	overflow: hidden;
+	padding-right: 16px;
+}
+
+body.scroll_blocked .header{
+	padding-right: 36px;
+}
+
+body.scroll_blocked .header .login{
+	right: 36px;
+}
+
+#menu.opened{
+	left: 0;
+}
+#menu.opened .close{
+	position:fixed;
+    transition: background-color 0.25s;
+}
+.back_btn{
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	z-index: 3;
+	background-color: #00c8c6;
+	text-align: center;
+	padding-top: 28px;
+	color: white;
+	cursor: pointer;
+	transition: all 0.25s;
+	font-size: 14px;
+	background-image: url(../img/i-top-arrow.png);
+	background-size: 30px;
+	background-position: center 5px;
+	display: none;
+}
+.back_btn:hover{
+	background-color: #ff257e;
+}
