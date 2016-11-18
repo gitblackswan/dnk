@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+<<<<<<< HEAD
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=480">
@@ -30,6 +31,52 @@
                     <p class="user_n">Марина Хлебникова</p>
                     <a class="logout" href>Выйти</a>
                 </div>
+=======
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=480">
+    <title>Document</title>
+    <link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i,600i|PT+Sans+Caption:400,700|Roboto+Slab:700&amp;subset=cyrillic" rel="stylesheet">
+    <script>
+        if (screen.width <= 750) {
+            document.location = "../mobile/" + document.location.search;
+        }
+    </script>
+    <style>
+        <?php include('css/head.css');
+        ?>
+    </style>
+    <link rel="stylesheet" href="css/sass/style.css">
+
+    <?php include('../track/head.php'); ?>
+</head>
+
+<body>
+    <div id="maket"></div>
+    <header>
+        <div>
+            <a href="" class="btn_menu_open"></a>
+            <a href="" class="logo"></a>
+            <a href="" class="login"></a>
+            <div class="user">
+                <img class="user_im" src="img/ava.png" alt="" width="87" height="87">
+                <div class="close_p"></div>
+            </div>
+        </div>
+    </header>
+    <section class="sec1">
+        <div>
+            <h1>ДНК Бизнеса</h1>
+            <span>Для предпринимателей и их бабушек</span>
+            <p>Стираем границы между обучением
+                <br>и практикой</p>
+            <h2>Все решения по привлечению <br>и взаимодействию с<br> клиентом на одном сервисе</h2>
+            <div class="vid">
+                <div class="play"></div>
+>>>>>>> origin/master
             </div>
         </header>
         <section class="sec1">
@@ -135,11 +182,24 @@
                         <input type="text" placeholder="Введите номер с кодом">
                     </div>
                 </div>
+<<<<<<< HEAD
                 <div class="block">
                     <p>Почта для заявок:</p>
                     <div class="link">
                         <input type="text" placeholder="Введите Ваш e-mail для заявок">
                     </div>
+=======
+                <p>Посмотри примеры 20 офферов,
+                    <br>которые дают конверсию
+                    <br>более 7,5%</p>
+                <a href="" class="btn">Посмотреть примеры офферов</a>
+            </div>
+            <div class="write_offer">
+                <h2>Напишите здесь свой <br>оффер !</h2>
+                <div class="link">
+                    <textarea name="discr" placeholder="Основа"></textarea>
+                    <span>Не более 36 символов</span>
+>>>>>>> origin/master
                 </div>
                 <div class="block">
                     <p>Почта на сайте:</p>
@@ -179,6 +239,7 @@
                     <a class="btn" href>Есть видео</a>
                     <a class="btn" href>Нет видео</a>
                 </div>
+<<<<<<< HEAD
                 <textarea name="discr" placeholder="Вставьте сюда ссылку на видео youtube"></textarea>
                 <div class="block">
                     <a class="btn_url" href>Примеры продаюищх видео</a>
@@ -216,6 +277,142 @@
                     <div class="block">
                         <div class="vid">
                             <div class="play"></div>
+=======
+            </div>
+            <a href="" class="btn_next">Следующий шаг</a>
+        </div>
+    </section>
+    <section class="sec6">
+        <div>
+            <h2>Регистрация почты</h2>
+            <div class="vid">
+                <div class="play"></div>
+            </div>
+            <div class="block">
+                <a href="" class="gmail">Google почта</a>
+                <a href="" class="yandex">Яндекс почта</a>
+                <a href="" class="mail">Mail почта</a>
+            </div>
+            <p>Для продолжения работы необходимо
+                <br>подтвердить электронный адрес, для этого
+                <br>перейдите в свою почту и найдите письмо с
+                <br>отправителем ДНК АТОМ.</p>
+            <p>В тексте письма перейдите по ссылке
+                <br> подтверждение и продолжите работу с
+                <br>сервисом.</p>
+        </div>
+    </section>
+    <section class="sec7">
+        <div>
+            <h2>Есть ли у вашей компании продающее видео?</h2>
+            <div class="block">
+                <a href="" class="btn">Есть видео</a>
+                <a href="" class="btn">Нет видео</a>
+            </div>
+            <textarea name="discr" placeholder="Вставьте сюда ссылку на видео youtube"></textarea>
+            <div class="block">
+                <a href="" class="btn_url">Примеры продаюищх видео</a>
+            </div>
+            <div class="block">
+                <div class="line"></div>
+            </div>
+            <h2>Есть ли у вашей компании логотип?</h2>
+            <div class="block">
+                <a href="" class="btn">Да, есть</a>
+                <a href="" class="btn">увы, нет</a>
+            </div>
+            <p>Загрузите Ваш логотип в
+                <br>нужном формате</p>
+            <div class="block">
+                <label for="">
+                    <input type="file"> Загрузить логотип
+                </label>
+                <div class="vid">
+                    <div class="play"></div>
+                </div>
+            </div>
+            <div class="block">
+                <span>Так он будет выглядеть:</span>
+                <div class="logo_img"></div>
+            </div>
+            <a href="" class="btn_next">Следующий шаг</a>
+        </div>
+    </section>
+    <section class="sec8">
+        <div>
+            <h2>Причина оставить заявку</h2>
+            <div class="vid">
+                <div class="play"></div>
+            </div>
+            <textarea name="discr" placeholder="Введите причину, по которой вам будут оставлять заявки"></textarea>
+            <textarea name="discr" placeholder="Введите надпись на кнопке"></textarea>
+            <h2>Какие данные вы хотите получить от клиента?</h2>
+            <div class="block">
+                <a href="" class="r_btn">Имя</a>
+            </div>
+            <div class="block">
+                <a href="" class="r_btn">Телефон</a>
+            </div>
+            <div class="block">
+                <a href="" class="r_btn active">E-mail</a>
+            </div>
+            <a href="" class="btn_next">Следующий шаг</a>
+        </div>
+    </section>
+    <section class="sec9">
+        <div>
+            <h2>Осталось выбрать фото / видео <br>фон для сайта вашей</h2>
+            <div class="vid">
+                <div class="play"></div>
+            </div>
+            <div class="block">
+                <p>Ссылка на видео:</p>
+                <textarea name="discr" placeholder="Вставьте сюда ссылку на видео youtube"></textarea>
+            </div>
+            <div class="block">
+                <p>Загрузить фото:</p>
+                <label for="">
+                    <input type="file"> Загрузить
+                </label>
+            </div>
+            <a href="" class="btn_next">Следующий шаг</a>
+        </div>
+    </section>
+    <section class="sec10">
+        <div>
+            <img src="img/monitor.png" alt="" width="172" height="172">
+            <h2>Настало время <br>посмотреть <br>сайт!</h2>
+            <a href="" class="btn">Посмотреть сайт</a>
+        </div>
+    </section>
+    <section class="sec11">
+        <div>
+            <div class="laptop">
+                <div class="site"></div>
+            </div>
+            <h2>Отзывы пользователей <br>DNK ATOM</h2>
+            <div class="slider_w">
+                <div class="slider">
+                    <div class="slid">
+                        <div class="block">
+                            <div class="vid">
+                                <div class="play"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block">
+                                <p>Сайт</p>
+                                <span>www.site.com</span>
+                            </div>
+                            <div class="block">
+                                <p>Конверсия</p>
+                                <span>348</span>
+                            </div>
+                            <div class="block">
+                                <p>Цена</p>
+                                <span>29 000 руб.</span>
+                            </div>
+>>>>>>> origin/master
                         </div>
                     </div>
                     <div class="block">
@@ -229,6 +426,7 @@
                     <a class="r_btn" href>Телефон</a>
                     <a class="r_btn active" href>e-mail</a>
                 </div>
+<<<<<<< HEAD
                 <a class="btn_next" href>Следующий шаг</a>
             </div>
         </section>
@@ -241,6 +439,47 @@
                 <div class="block">
                     <p>Ссылка на видео:</p>
                     <textarea name="discr" placeholder="Вставьте сюда ссылку на видео youtube"></textarea>
+=======
+                <p>Подключи сайт к своему домену, привяжи
+                    <br>его к СРМ системе и настрой эффективную
+                    <br>компанию на Яндекс Директ</p>
+            </div>
+            <h2>Ты сделаешь все это всего за <br>1 час И уже сегодня получишь <br>первых клиентов!</h2>
+            <h3>Открой доступ к продолжению <br>пошагового курса по привлечению <br>клиентов в твой бизнес всего <br>за 179 руб. !</h3>
+            <div class="block">
+                <div class="line"></div>
+            </div>
+            <div class="block_b">
+                <p>Бонусом ты получишь еще 15 крутых
+                    <br>примеров продающих видео и офферов</p>
+                <a href="" class="btn">Мне нужны клиенты. <br>Продолжить за 179 руб.</a>
+                <a href="" class="btn">Мне не нужны <br>клиенты</a>
+            </div>
+        </div>
+    </section>
+    <section class="sec12">
+        <div>
+            <h2>Привязка сайта к вашему домену</h2>
+            <div class="block">
+                <a href="" class="btn">Я знаю как это делать</a>
+                <a href="" class="btn">Есть домен, не знаю как привязать</a>
+                <a href="" class="btn">Нет домена</a>
+            </div>
+            <p>Добавьте А запись: ХХХ.ХХ.Х.ХХ к
+                <br>вашему домену</p>
+            <div class="vid">
+                <div class="play"></div>
+            </div>
+            <a href="" class="btn_next">Следующий шаг</a>
+        </div>
+    </section>
+    <section class="sec13">
+        <div>
+            <h2>Привязка CRM системы</h2>
+            <div class="block">
+                <div class="vid">
+                    <div class="play"></div>
+>>>>>>> origin/master
                 </div>
                 <div class="block">
                     <p>Загрузить фото:</p>
@@ -248,10 +487,26 @@
                         <input type="file"> Загрузить
                     </label>
                 </div>
+<<<<<<< HEAD
                 <a class="btn_next" href>Следующий шаг</a>
             </div>
         </section>
         <section class="sec10">
+=======
+                <p>С этого момента вам открыт на 1 неделю
+                    <br>доступ в CRM систему в вашем личном кабинете</p>
+            </div>
+            <a href="" class="btn_next">Настроить бизнес процессы</a>
+        </div>
+    </section>
+    <div id="hidden-box">
+        <div class="popap">
+            <div class="close_p"></div>
+            <p>Данное поле заполнено
+                <br>некорректно!</p>
+        </div>
+        <div class="pop" id="login">
+>>>>>>> origin/master
             <div>
                 <img src="img/monitor.png" alt height="172" width="172">
                 <h2>Настало время посмотреть сайт!</h2>
@@ -304,6 +559,7 @@
                 </div>
                 <h2>Ты сделаешь все это всего <br>за 1 час И уже сегодня получишь <br>первых клиентов!</h2>
                 <div class="block">
+<<<<<<< HEAD
                     <div class="line"></div>
                 </div>
                 <h3>Открой доступ к продолжению пошагового <br>курса по привлечению клиентов в твой <br>бизнес всего за 179 руб. !</h3>
@@ -312,6 +568,12 @@
                         <br>примеров продающих видео и офферов</p>
                     <a class="btn" href>Мне не нужны <br>клиенты</a>
                     <a class="btn" href>Мне нужны клиенты. <br>Продолжить за 179 руб.</a>
+=======
+                    <a href="" class="menu_a active">Введите данные куда будут <br>приходить звонки</a>
+                </div>
+                <div class="block">
+                    <a href="" class="menu_a">Есть ли у Вашей компании <br>видео?</a>
+>>>>>>> origin/master
                 </div>
             </div>
         </section>
@@ -374,6 +636,7 @@
                         </form>
                     </div>
                 </div>
+<<<<<<< HEAD
             </div>
             <div class="pop" id="menu">
                 <div>
@@ -411,6 +674,10 @@
                     <div class="block">
                         <a class="menu_a" href>Привязка сайта к Вашему домену</a>
                     </div>
+=======
+                <div class="block">
+                    <a href="" class="menu_a">Привязка сайта к Вашему <br>домену</a>
+>>>>>>> origin/master
                 </div>
             </div>
         </div>
