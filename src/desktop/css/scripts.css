@@ -62,8 +62,18 @@ body.scroll_blocked .header .login{
 
 #menu.opened{
 	left: 0;
+	visibility: visible;
 }
 #menu.opened .close{
+	position:fixed;
+    transition: background-color 0.25s;
+}
+#login.opened{
+	right: 0;
+	visibility: visible;
+	transition: right 0.25s, 0.25s visibility 0s;
+}
+#login.opened .close{
 	position:fixed;
     transition: background-color 0.25s;
 }
@@ -89,4 +99,20 @@ body.scroll_blocked .header .login{
 }
 .back_btn:hover{
 	background-color: #ff257e;
+}
+.popap .vid{
+	width:516px;
+	height:315px;
+	background: green;
+}
+.content-video-pop{
+	/* padding: 0; */
+}
+
+.content-video-pop p{
+	font-size:28px;
+	margin-top:20px;
+}
+.logo_part{
+	/* display: none; */
 }

@@ -25,6 +25,7 @@ $grenu: #1b4c4d;
 @mixin sec() {
     width: 100%;
     min-width: $wievport;
+    min-height:100vh;
     overflow: hidden;
     position: relative;
     z-index: 2;
@@ -614,6 +615,7 @@ textarea {
                 height: 66px;
                 line-height: 66px;
                 font-size: 16px;
+                color:$dark!important;
             }
             input{
                 display:inline-block;
@@ -626,6 +628,10 @@ textarea {
                 color:black;
                 background-color:transparent;
                 text-align:center;
+
+                background:transparent!important;
+                border:0px solid transparent!important;
+                //transition:all 0s!important;
                 &.iph1{
                     width:9px;
                     margin-right:3px;
@@ -638,7 +644,7 @@ textarea {
                     width:76px;
                     text-align:left;
                 }
-                &.error{
+                &.error-input{
                     color:red;
                 }
 
@@ -650,18 +656,25 @@ textarea {
                 font-size: 16px;
                 padding-left: 35px;
                 background-color: $inpc;
-                color:$igray;
+                color:$igray!important;
+                border:1px solid transparent;
                 top: 0;
                 left: 0;
-                border-radius: 26px;
+                border-radius: 25px;
                 width: 100%;
                 cursor:text;
                 font-weight:300;
                 z-index:2;
+                transition:all 0.25s;
             }
             &.error-input{
                 	border-color: red;
                     background-color: #ffebeb;
+                    span.placeholder_p{
+                        background-color: #ffebeb;
+                        border-color: red;
+
+                    }
             }
         }
     }
@@ -699,11 +712,37 @@ textarea {
         width: 556px;
         height: 331px;
         background-image: url(../img/video_reg.png);
+        margin-bottom: 90px;
     }
     .play {
     }
+    .wrap{
+        position: relative;
+        .block.absolute{
+            position: absolute;
+            width:100%;
+            height:100%;
+            padding-top:60px;
+            a{
+                padding-left:20px;
+                padding-right:20px;
+                margin: 0 50px;
+                width:initial;
+            }
+        }
+        .block-after{
+            transition:opacity 0.25s;
+            opacity:0;
+            position:relative;
+            z-index:-2;
+            &.show{
+                opacity:1;
+                z-index: 2;
+            }
+        }
+    }
     .block {
-        margin-top: 90px;
+        /*margin-top: 90px;*/
     }
     .block a {
         width: 273px;
@@ -770,6 +809,12 @@ label {
 .sec7 {
     background-image: url(../img/bg_sec7.jpg);
     padding: 68px 0px 81px;
+    &>div{
+        margin-top:calc(50vh);
+        transform:translate3d(0,-50%,0);
+
+
+    }
     h2 {
         color: $white;
     }
@@ -790,14 +835,18 @@ label {
             background-color: $grend;
         }
     }
-    textarea{
+    input{
         width: 100%;
         max-width: 613px;
         height: 66px;
         background-color: $while;
+        color:$dark;
         border-radius: 29px;
         margin-top: 31px;
         margin-left: 26px;
+        padding-left: 20px;
+        display :none;
+        border: 1px solid transparent;
     }
     .btn_url {
         font-size: 14px;
@@ -1325,15 +1374,6 @@ label {
     font-size: 0;
     @include sec();
     padding-top: 1px;
-    &#login{
-        .block {
-            background-image: url(../img/line_p.png);
-            width: 587px;
-            height: 311px;
-            display: inline-block;
-            margin-top: 358px;
-        }
-    }
     .close {
         width: 87px;
         height: 87px;
@@ -1365,6 +1405,7 @@ label {
             height: 66px;
             background-color: white;
             border-radius: 26px;
+            border:1px solid transparent;
             margin: 12px 0px;
             padding: 0px 40px;
         }
@@ -1390,10 +1431,11 @@ label {
         position:fixed;        
         top: 0;
         left: -100%;
-        @include trans();
+        transition:left 0.25s;
         height: 100vh!important;
         overflow: auto;
         z-index:5;
+        visibility: hidden;
         &>div{
             padding:80px 0;
             height:initial;
@@ -1422,6 +1464,38 @@ label {
                     background-color: $grend;
                 }
             }
+        }
+    }
+    &#login{    
+        position:fixed;        
+        top: 0;
+        right: -100%;
+        transition: right 0.25s, 0.25s visibility 0s;
+        height: 100vh!important;
+        overflow: auto;
+        z-index:5;
+        visibility:hidden;
+        .block {
+            background-image: url(../img/line_p.png);
+            width: 587px;
+            height: 311px;
+            display: inline-block;
+        }
+        &>div.div{
+           	height: 378px;
+            padding: 33px 0;
+            position: absolute;
+            width: 588px;
+            left: 50%;
+            margin-left: -294px;
+            top: 50%;
+            margin-top: -189px;
+        }
+        &>div.close{
+            padding:0;
+            height:87px!important;
+            right:20px;
+            transition: background-color 0.25s;
         }
     }
 }
@@ -1503,5 +1577,23 @@ label {
         &:hover,&:active,&.active{
             background-color: $pink;
         }
+    }
+}
+
+.offer-pop{
+    background: white;
+	position: relative;
+	border-radius: 30px;
+	text-align: center;
+	padding: 40px;
+    p{
+        font-size:40px;
+        font-weight:300;
+        line-height:50px;
+    }
+    span{
+        font-size:24px;
+        margin-top:20px;
+        display:block;
     }
 }

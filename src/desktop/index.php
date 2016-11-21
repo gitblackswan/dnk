@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
+        <script src="http://localhost:1342/livereload.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=1200">
         <title>ДНК</title>
@@ -122,7 +123,7 @@
                         <div class="block">
                             <p>Посмотри примеры 20 офферов, которые
                                 <br>дают конверсию более 7,5%</p>
-                            <a class="btn" href="#">Посмотреть примеры офферов</a>
+                            <a class="btn" id="offer_pop" href="#">Посмотреть примеры офферов</a>
                         </div>
                     </div>
                     <div class="write_offer">
@@ -148,32 +149,32 @@
                             <div class="input">
                                 <span class="placeholder_p">Введите номер с кодом</span>
                                 <span>+</span>
-                                <input type="text" class="iph1" name="phone1" placeholder="_">
+                                <input type="text" class="iph1 valid" name="phone1" data-input-type="ph1" placeholder="_">
                                 <span>(</span>
-                                <input type="text" class="iph2" name="phone2" placeholder="___">
+                                <input type="text" class="iph2 valid" name="phone2" data-input-type="ph2" placeholder="___">
                                 <span>)</span>
-                                <input type="text" class="iph3" name="phone3" placeholder="___-__-__">
-                                
+                                <input type="text" class="iph3 valid" name="phone3" data-input-type="ph3" placeholder="___-__-__">
+                                <input type="hidden" class="hid-valid" name="phone">
                             </div>
                         </div>
                     </div>
                     <div class="block">
                         <p>Почта для заявок:</p>
                         <div class="link">
-                            <input type="text" name="act_email" placeholder="Введите Ваш e-mail для заявок">
+                            <input type="text" class="valid" name="act_email" data-input-type="act_email" placeholder="Введите Ваш e-mail для заявок">
                         </div>
                     </div>
                     <div class="block">
                         <p>Почта на сайте:</p>
                         <div class="link">
-                            <input type="text" name="page_email" placeholder="Введите Ваш e-mail на сайте">
+                            <input type="text" class="valid" name="page_email" data-input-type="page_email" placeholder="Введите Ваш e-mail на сайте">
                             <span>Если почта та же, что и для заявок оставьте поле пустым</span>
                         </div>
                     </div>
                     <div class="block">
                         <p>Адрес Вашей компании:</p>
                         <div class="link">
-                            <input type="text" name="page_addr" placeholder="Введите город">
+                            <input type="text" class="valid" name="page_addr" data-input-type="page_addr" placeholder="Введите город">
                         </div>
                     </div>
                     <a class="btn_next next-step" href="#">Следующий шаг</a>
@@ -185,54 +186,70 @@
                     <div class="vid video_btn" data-video="lF_C7BvAf_A">
                         <div class="play"></div>
                     </div>
-                    <div class="block">
-                        <a class="gmail" href="#">Google почта</a>
-                        <a class="yandex" href="#">Яндекс почта</a>
-                        <a class="mail" href="#">Mail почта</a>
+                    <div class="wrap">
+                        <div class="block absolute">
+                            <a href="#" data-event="register">У меня нет аккаунта</a>
+                            <a href="#" data-event="login">У меня есть аккаунт</a>
+                        </div>
+                        <div class="block-after">
+                            <div class="block">
+                                <a class="gmail" href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Google почта</a>
+                                <a class="yandex" href="https://mail.yandex.ua/" target="_blank">Яндекс почта</a>
+                                <a class="mail" href="https://e.mail.ru/messages/inbox/" target="_blank">Mail почта</a>
+                            </div>
+                            <p>Для продолжения работы необходимо подтвердить
+                                <br>электронный адрес, для этого перейдите в свою почту и
+                                <br>найдите письмо с отправителем ДНК АТОМ.</p>
+                            <p>В тексте письма перейдите по ссылке подтверждение и
+                                <br>продолжите работу с сервисом.</p>
+                        </div>                        
                     </div>
-                    <p>Для продолжения работы необходимо подтвердить
-                        <br>электронный адрес, для этого перейдите в свою почту и
-                        <br>найдите письмо с отправителем ДНК АТОМ.</p>
-                    <p>В тексте письма перейдите по ссылке подтверждение и
-                        <br>продолжите работу с сервисом.</p>
+                        
                 </div>
             </section>
             <section class="sec7" data-step="7">
                 <div>
                     <h2>Есть ли у вашей компании продающее видео?</h2>
                     <div class="block">
-                        <a class="btn" href="#">Есть видео</a>
-                        <a class="btn" href="#">Нет видео</a>
+                        <a class="btn video_trigger" data-event="show" href="#">Есть видео</a>
+                        <a class="btn video_trigger" data-event="hide" href="#">Нет видео</a>
                     </div>
-                    <textarea name="discr" placeholder="Вставьте сюда ссылку на видео youtube"></textarea>
+                    <input type="text" name="content_video" id="content_video" placeholder="Вставьте сюда ссылку на видео youtube" class="valid" data-input-type="video">
                     <div class="block">
-                        <a class="btn_url" href="#">Примеры продаюищх видео</a>
+                        <a class="btn_url" id="content_video_pop" href="#">Примеры продаюищх видео</a>
                     </div>
                     <div class="block">
                         <div class="line"></div>
                     </div>
                     <h2>Есть ли у вашей компании логотип?</h2>
                     <div class="block">
-                        <a class="btn" href="#">Да, есть</a>
-                        <a class="btn" href="#">увы, нет</a>
+                        <a class="btn video_trigger" data-event="show" href="#">Да, есть</a>
+                        <a class="btn video_trigger" data-event="hide" href="#">увы, нет</a>
                     </div>
-                    <p>Загрузите Ваш логотип в нужном формате</p>
-                    <div class="block">
+
+                    <div class="logo_part">
+
+                        <p>Загрузите Ваш логотип в нужном формате</p>
                         <div class="block">
-                            <label for="upfile1">
-                                 Загрузить логотип
-                            </label>
-                            <input type="file" id="upfile1">
-                            <div class="vid video_btn" data-video="lF_C7BvAf_A">
-                                <div class="play"></div>
+                            <div class="block">
+                                <label for="upfile1">
+                                     Загрузить логотип
+                                </label>
+                                <input type="file" id="upfile1">
+                                <input type="hidden" name="logo_img" data-input-type="logo" id="logo_img">
+                                <div class="vid video_btn" data-video="lF_C7BvAf_A">
+                                    <div class="play"></div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <span>Так он будет выглядеть:</span>
+                                <div class="logo_img"></div>
                             </div>
                         </div>
-                        <div class="block">
-                            <span>Так он будет выглядеть:</span>
-                            <div class="logo_img"></div>
-                        </div>
+                        
                     </div>
-                    <a class="btn_next" href="#">Следующий шаг</a>
+                    
+                    <a class="btn_next next-step" href="#">Следующий шаг</a>
                 </div>
             </section>
             <section class="sec8" data-step="8">
@@ -255,7 +272,7 @@
                         <a class="r_btn" href="#">Телефон</a>
                         <a class="r_btn active" href="#">e-mail</a>
                     </div>
-                    <a class="btn_next" href="#">Следующий шаг</a>
+                    <a class="btn_next next-step" href="#">Следующий шаг</a>
                 </div>
             </section>
             <section class="sec9" data-step="9">
@@ -266,7 +283,7 @@
                     </div>
                     <div class="block">
                         <p>Ссылка на видео:</p>
-                        <textarea name="discr" placeholder="Вставьте сюда ссылку на видео youtube"></textarea>
+                        <input name="bg_video" placeholder="Вставьте сюда ссылку на видео youtube" class="valid" data-input-type="video">
                     </div>
                     <div class="block">
                         <p>Загрузить фото:</p>
@@ -275,14 +292,14 @@
                         </label>
                         <input type="file" id="upfile2"> 
                     </div>
-                    <a class="btn_next" href="#">Следующий шаг</a>
+                    <a class="btn_next next-step" href="#">Следующий шаг</a>
                 </div>
             </section>
             <section class="sec10" data-step="10">
                 <div>
                     <img src="img/monitor.png" alt height="172" width="172">
                     <h2>Настало время посмотреть сайт!</h2>
-                    <a class="btn" href="#">Посмотреть сайт</a>
+                    <a class="btn next-step" href="#">Посмотреть сайт</a>
                 </div>
             </section>
             <section class="sec11" data-step="11">
@@ -385,27 +402,57 @@
             </section>
         </div>
         <div id="hidden-box">
+            <input type="hidden" name="user_hash" value="new">
             <div class="popap" id="validation_popup">
                 <div class="close_p"></div>
                 <p><span></span></p>
-            </div>
-            <div class="pop" id="login">
-                <div>
-                    <div class="close close_p"></div>
-                    <div class="block">
-                        <h2>Войти</h2>
-                        <form action="#">
-                            <input name="mail" type="text" placeholder="Введите Ваш e-mail">
-                            <input name="password" type="text" placeholder="Введите пароль">
-                            <input class="sub" type="submit" value="Войти">
-                        </form>
-                    </div>
-                </div>
             </div>
             <div class="conf-pop">
                 <div class="close close_p">
                 </div>
                 <p>Данное соглашение об обработке персональных данных разработано в соответствии с законодательством Российской Федерации. Все лица заполнившие сведения, составляющие персональные данные на данном сайте, а также разместившие иную информацию обозначенными действиями подтверждают свое согласие на обработку персональных данных и их передачу оператору обработки персональных данных. Под персональными данными Гражданина понимается нижеуказанная информация: общая информация; посетители сайта направляют свои персональные данные. Гражданин, принимая настоящее Соглашение, выражают свою заинтересованность и полное согласие, что обработка их персональных данных может включать в себя следующие действия: сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, уничтожение. Гражданин гарантирует: информация, им предоставленная, является полной, точной и достоверной; при предоставлении информации не нарушается действующее законодательство Российской Федерации, законные права и интересы третьих лиц; вся предоставленная информация заполнена Гражданина в отношении себя лично.</p>
+            </div>
+            <div class="offer-pop popap">
+                <div class="close close_p">
+                </div>
+                <ul class="init_slider">
+                    <li>
+                        <p>Товарищи! дальнейшее развитие различных форм деятельности требуют от нас анализа</p>
+                        <span>Товарищи! дальнейшее развитие различных форм деятельности требуют от н</span>
+                    </li>
+                    <li>
+                        <p>Товарищи! дальнейшее развитие различных форм деятельности требуют от нас анализа</p>
+                        <span>Товарищи! дальнейшее развитие различных форм деятельности требуют от н</span>
+                    </li>
+                    <li>
+                        <p>Товарищи! дальнейшее развитие различных форм деятельности требуют от нас анализа</p>
+                        <span>Товарищи! дальнейшее развитие различных форм деятельности требуют от н</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-video-pop popap">
+                <div class="close close_p">
+                </div>
+                <ul class="init_slider">
+                    <li>
+                        <div class="vid video_btn" data-video="w6K0iDsu0TM">
+                            <div class="play"></div>
+                        </div>
+                        <p>Заголовок для продающего видео</p>
+                    </li>
+                    <li>
+                        <div class="vid video_btn" data-video="w6K0iDsu0TM">
+                            <div class="play"></div>
+                        </div>
+                        <p>Заголовок для продающего видео</p>
+                    </li>
+                    <li>
+                        <div class="vid video_btn" data-video="w6K0iDsu0TM">
+                            <div class="play"></div>
+                        </div>
+                        <p>Заголовок для продающего видео</p>
+                    </li>
+                </ul>
             </div>
             <div class="not-allowed">
                 <div class="close close_p">
@@ -451,11 +498,25 @@
                 </div>
             </div>
         </div>
+        <div class="pop" id="login">
+            <div class="close"></div>
+            <div class="div">
+                <div class="block">
+                    <h2>Войти</h2>
+                    <form action="#" class="login" data-event="login_to_send">
+                        <input name="email" type="text" class="valid" placeholder="Введите Ваш e-mail" data-input-type="email">
+                        <input name="password" type="password" class="valid" placeholder="Введите пароль" data-input-type="pass">
+                        <input class="sub" type="submit" value="Войти">
+                    </form>
+                </div>
+            </div>
+        </div>
         <div class="back_btn">
             назад
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
         <script src="js/init.js"></script>
+
         <?php include('../track/body.php'); ?>
     </body>
 </html>

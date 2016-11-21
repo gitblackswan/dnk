@@ -1168,8 +1168,16 @@ module.exports = function(grunt) {
 
         watch: {
             desktop_sass: {
+                //options: { livereload: true },
                 files: 'src/desktop/css/sass/*.scss',
                 tasks: ['sass:desktop']
+            },
+            livereload:{
+                options: {
+                    spawn: true,
+                    livereload: 1342},
+                files: 'src/desktop/**/*',
+                tasks: []
             },
             tablet_sass: {
                 files: 'src/tablet/css/sass/*.scss',
@@ -1180,6 +1188,7 @@ module.exports = function(grunt) {
                 tasks: ['sass:mobile']
             },
             desktop_concat_libs_css: {
+                //options: { livereload: true },
                 files: ['src/desktop/css/libs/*.css'],
                 tasks: ['concat:desktop_libs_css'],
             },
@@ -1192,6 +1201,7 @@ module.exports = function(grunt) {
                 tasks: ['concat:mobile_libs_css'],
             },
             desktop_concat_libs_js: {
+                //options: { livereload: true },
                 files: ['src/desktop/js/libs/*.js'],
                 tasks: ['concat:desktop_libs_js'],
             },
