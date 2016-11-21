@@ -747,7 +747,8 @@ label {
   /* line 735, E:/CACHE/GITHUB/dnk/src/mobile/css/sass/style.scss */
   .sec8 .block {
     margin-top: 35px;
-    padding-left: 30%; }
+    /* padding-left: 30%; */
+    }
     /* line 738, E:/CACHE/GITHUB/dnk/src/mobile/css/sass/style.scss */
     .sec8 .block .r_btn {
       font-size: 18px;
@@ -755,9 +756,10 @@ label {
       line-height: 37px;
       position: relative;
       padding-left: 52px;
-      margin: 0px 0px 0px;
+      margin: 0px 10px 0px;
       text-align: left;
-      float: left; }
+      /* float: left; */
+      }
       /* line 749, E:/CACHE/GITHUB/dnk/src/mobile/css/sass/style.scss */
       .sec8 .block .r_btn:before {
         content: "";
@@ -1121,7 +1123,8 @@ label {
 
 /* line 1146, E:/CACHE/GITHUB/dnk/src/mobile/css/sass/style.scss */
 #hidden-box {
-  display: none; }
+  display: none;
+  }
 
 /* line 1149, E:/CACHE/GITHUB/dnk/src/mobile/css/sass/style.scss */
 .pop {
