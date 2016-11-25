@@ -8,8 +8,8 @@ module.exports = function(grunt) {
 
 
     var ft_target = 'src/desktop/';
-    var ft_folder = 'webdone.info/www/standarts/';
-    var ft_host = 'webdone.ftp.ukraine.com.ua';
+    var ft_folder = 'site/lp.dnk.bz/htdocs/';
+    var ft_host = 'ftp.dnk.bz';
     
    
     var dist_valid_array = ['dist/index.php'];  
@@ -1162,10 +1162,64 @@ module.exports = function(grunt) {
                 exclusions: [
                     '**/.DS_Store',
                     '**/Thumbs.db',
+                    '**/.htaccess',
                 ]
             }
         },
 
+        'ftpscript': {
+            publish: {
+                options: {
+                    host: ft_host,
+                    authKey: 'key1',
+                    passive: false,
+                    port: 21
+                },
+                files: [
+                    {
+                        expand: true,
+                        cwd: ft_target,
+                        src: [
+                            '**/*',
+                            '!**/.DS_Store',
+                            '!**/Thumbs.db',
+                            '!**/.htaccess'
+                        ],
+                        dest: ft_folder
+                    }
+                ]
+            }
+        },
+        ftp_push: {
+            your_target: {
+              options: {
+                authKey: "key1",
+                host: ft_host,
+                dest: '',
+                port: 21
+              },
+              files: [ // Enable Dynamic Expansion, Src matches are relative to this path, Actual Pattern(s) to match 
+                {expand: true,cwd:'src/desktop/',src: [
+                            '**/*'
+                            ]}
+              ]
+            }
+          },
+        rsync: {
+            options: {
+                args: ['-avz', '--verbose', '--delete'],
+                exclude: ['.git*', 'cache', 'log'],
+                recursive: true
+            },
+            development: {
+                options: {
+                    src: ft_target,
+                    dest: ft_folder,
+                    host: 'play0for0fun:n177h7ju8p@ftp.dnk.bz',
+                    port: 2222
+                }
+            }
+        },
         watch: {
             desktop_sass: {
                 //options: { livereload: true },
@@ -1175,9 +1229,17 @@ module.exports = function(grunt) {
             livereload:{
                 options: {
                     spawn: true,
-                    livereload: 1342},
-                files: 'src/desktop/**/*',
+                    livereload: {
+                        host: 'localhost',
+                        port: 4444,
+                        key: grunt.file.read('livereload.key'),
+                        cert: grunt.file.read('livereload.crt')
+                        // you can pass in any other options you'd like to the https server, as listed here: http://nodejs.org/api/tls.html#tls_tls_createserver_options_secureconnectionlistener
+                    }
+                    },
+                files: ['src/desktop/**/*.php','src/desktop/**/*.js','src/desktop/**/*.css'],
                 tasks: []
+
             },
             tablet_sass: {
                 files: 'src/tablet/css/sass/*.scss',
@@ -1237,6 +1299,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-prettify');
     grunt.loadNpmTasks("grunt-jsbeautifier");
     grunt.loadNpmTasks('grunt-contrib-csslint');
+    grunt.loadNpmTasks('grunt-ftpscript');
+    grunt.loadNpmTasks('grunt-ftp-push-fullpath');
+    grunt.loadNpmTasks('grunt-rsync');
 
 
     grunt.registerTask('start-desktop', [
@@ -1428,7 +1493,7 @@ check_command.push('validation:src');
     grunt.registerTask('start', start_command);
     grunt.registerTask('fin', fin_array);
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('ftp', ['ftpush']);
+    grunt.registerTask('ftp', ['ftpscript']);
 
 
 };

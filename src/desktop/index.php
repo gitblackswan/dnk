@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <!-- <script src="http://localhost:1342/livereload.js"></script> -->
+        <script src="https://localhost:4444/livereload.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=1200">
-        <title>ДНК</title>
+        <title>ДНК</title> 
         <!-- <link type="image/x-icon" href="favicon.ico" rel="shortcut icon"> -->
         <script>
             if (screen.width <= 750) {
@@ -28,7 +28,6 @@
             <a class="logo" href="#"></a>
             <a class="login" href="#"></a>
             <div class="user">
-                <img class="user_im" src="img/ava.png" alt height="57" width="57">
                 <p class="user_n">Марина Хлебникова</p>
                 <a class="logout" href="#">Выйти</a>
             </div>
@@ -80,7 +79,7 @@
                         <div class="vid video_btn" data-video="bYT2pmXPOkI">
                             <div class="play"></div>
                         </div>
-                        <textarea name="discr" data-input-type="descriptor" placeholder="Введите текст"></textarea>
+                        <textarea name="descriptor" data-input-type="descriptor" placeholder="Введите текст"></textarea>
                         <span>Не более 70 символов</span>
                     </div>
                     <a class="btn_next next-step" href="#">Следующий шаг</a>
@@ -94,33 +93,6 @@
                             <div class="play"></div>
                         </div>
                     </div>
-                    <div class="offer_top">
-                        <div class="block">
-                            <div class="vid video_btn" data-video="tlxs_mG-8nA">
-                                <div class="play"></div>
-                            </div>
-                            <textarea name="what_sell" data-input-type="what_sell" placeholder="Что Вы продаете?"></textarea>
-                        </div>
-                        <div class="block">
-                            <div class="vid video_btn" data-video="tlxs_mG-8nA">
-                                <div class="play"></div>
-                            </div>
-                            <textarea name="what_buy" data-input-type="what_buy" placeholder="Что покупает клиент?"></textarea>
-                        </div>
-                        <div class="block">
-                            <div class="vid video_btn" data-video="tlxs_mG-8nA">
-                                <div class="play"></div>
-                            </div>
-                            <textarea name="what_take" data-input-type="what_take" placeholder="Что получает клиент?"></textarea>
-                        </div>
-                    </div>
-                    <div class="of_for_block">
-                        <h2>Как сформулировать оффер?</h2>
-                        <div class="block">
-                            <div class="vid video_btn" data-video="lF_C7BvAf_A">
-                                <div class="play"></div>
-                            </div>
-                        </div>
                         <div class="offer_top">
                             <div class="block">
                                 <div class="vid video_btn" data-video="tlxs_mG-8nA">
@@ -177,11 +149,11 @@
                             <div class="input">
                                 <span class="placeholder_p">Введите номер с кодом</span>
                                 <span>+</span>
-                                <input class="iph1 valid" name="phone1" data-input-type="ph1" type="text" placeholder="_">
+                                <input class="iph1 valid" name="phone_p1" data-input-type="ph1" type="text" placeholder="_">
                                 <span>(</span>
-                                <input class="iph2 valid" name="phone2" data-input-type="ph2" type="text" placeholder="___">
+                                <input class="iph2 valid" name="phone_p2" data-input-type="ph2" type="text" placeholder="___">
                                 <span>)</span>
-                                <input class="iph3 valid" name="phone3" data-input-type="ph3" type="text" placeholder="___-__-__">
+                                <input class="iph3 valid" name="phone_p3" data-input-type="ph3" type="text" placeholder="___-__-__">
                                 <input class="hid-valid" name="phone" type="hidden">
                             </div>
                         </div>
@@ -189,13 +161,13 @@
                     <div class="block">
                         <p>Почта для заявок:</p>
                         <div class="link">
-                            <input class="valid" name="act_email" data-input-type="act_email" type="text" placeholder="Введите Ваш e-mail для заявок">
+                            <input class="valid" name="act_email" data-input-type="act_email" type="email" placeholder="Введите Ваш e-mail для заявок">
                         </div>
                     </div>
                     <div class="block">
                         <p>Почта на сайте:</p>
                         <div class="link">
-                            <input class="valid" name="page_email" data-input-type="page_email" type="text" placeholder="Введите Ваш e-mail на сайте">
+                            <input class="valid" name="page_email" data-input-type="page_email" type="email" placeholder="Введите Ваш e-mail на сайте">
                             <span>Если почта та же, что и для заявок оставьте поле пустым</span>
                         </div>
                     </div>
@@ -238,49 +210,47 @@
                 <div>
                     <h2>Есть ли у вашей компании продающее видео?</h2>
                     <div class="block">
-                        <a class="btn" href="#">Есть видео</a>
-                        <a class="btn" href="#">Нет видео</a>
+                        <a class="btn video_trigger" data-event="show" href="#">Есть видео</a>
+                        <a class="btn video_trigger" data-event="hide" href="#">Нет видео</a>
                     </div>
-                    <textarea name="discr" placeholder="Вставьте сюда ссылку на видео youtube"></textarea>
+                    <input type="text" name="content_video" id="content_video" placeholder="Вставьте сюда ссылку на видео youtube" class="valid" data-input-type="video">
                     <div class="block">
-                        <a class="btn_url" href="#">Примеры продаюищх видео</a>
+                        <a class="btn_url" id="content_video_pop" href="#">Примеры продаюищх видео</a>
                     </div>
                     <div class="block">
                         <div class="line"></div>
                     </div>
                     <h2>Есть ли у вашей компании логотип?</h2>
                     <div class="block">
-                        <a class="btn" href="#">Да, есть</a>
-                        <a class="btn" href="#">увы, нет</a>
+                        <a class="btn logo_trigger" data-event="show" href="#">Да, есть</a>
+                        <a class="btn logo_trigger" data-event="hide" href="#">увы, нет</a>
                     </div>
-                    <p>Загрузите Ваш логотип в нужном формате</p>
-                    <div class="block">
+                    <div class="logo_part_show">
+                        <p>Загрузите Ваш логотип в нужном формате</p>
                         <div class="block">
-                            <a class="btn video_trigger" data-event="show" href="#">Да, есть</a>
-                            <a class="btn video_trigger" data-event="hide" href="#">увы, нет</a>
-                        </div>
-                        <div class="logo_part">
-                            <p>Загрузите Ваш логотип в нужном формате</p>
+                            <form class="block" enctype="multipart/form-data" action="#">
+                                <label for="upfile1">
+                                    Загрузить логотип
+                                </label>
+                                <input id="upfile1" type="file" name="file">               
+                                <div class="vid video_btn" data-video="lF_C7BvAf_A">
+                                    <div class="play"></div>
+                                </div>
+                            </form>      
+                            <input id="logo_img" name="logo_img" class="valid" data-input-type="logo_img" type="hidden">               
                             <div class="block">
-                                <div class="block">
-                                    <label for="upfile1">
-                                        Загрузить логотип
-                                    </label>
-                                    <input id="upfile1" type="file">
-                                    <input id="logo_img" name="logo_img" data-input-type="logo" type="hidden">
-                                    <div class="vid video_btn" data-video="lF_C7BvAf_A">
-                                        <div class="play"></div>
-                                    </div>
-                                </div>
-                                <div class="block">
-                                    <span>Так он будет выглядеть:</span>
-                                    <div class="logo_img"></div>
-                                </div>
+                                <span>Так он будет выглядеть:</span>
+                                <div class="logo_img"></div>
                             </div>
                         </div>
-                        <a class="btn_next next-step" href="#">Следующий шаг</a>
                     </div>
-                    <a class="btn_next" href="#">Следующий шаг</a>
+                    <div class="logo_part_hide">
+                        <p>Сгенерируйте себе логотип за 5 минут</p>
+                        <div class="vid video_btn" data-video="lF_C7BvAf_A">
+                            <div class="play"></div>
+                        </div>
+                    </div>
+                        <a class="btn_next next-step" href="#">Следующий шаг</a>
                 </div>
             </section>
             <section class="sec8" data-step="8">
@@ -293,11 +263,28 @@
                             </div>
                         </div>
                         <div class="block">
-                            <textarea name="discr" placeholder="Введите причину, по которой вам будут оставлять заявки"></textarea>
-                            <textarea name="discr" placeholder="Введите надпись на кнопке"></textarea>
+                            <textarea id="form_head" name="form_head" class="valid" data-input-type="form_head" placeholder="Введите причину, по которой вам будут оставлять заявки"></textarea>
+                            <textarea id="form_button" name="form_button" class="valid" data-input-type="form_button" placeholder="Введите надпись на кнопке"></textarea>
                         </div>
+                        
+                    </div> 
+                        <h2>Какие данные вы хотите получить от клиента?</h2>
+                        <div class="block">
+                            <a class="r_btn active perm" href="#">Имя</a>
+                            <a class="r_btn active perm" href="#">Телефон</a>
+                            <a class="r_btn check" data-check="email" href="#">e-mail</a>
+                            <div class="clear"></div>
+                            <a class="r_btn check" data-check="custom" href="#">Текстовое поле</a>
+                            <span class="inputs">
+                                <input type="text" id="d_inp_name" name="d_inp_name" data-input-type="input_par_name" value="0" class="valid" placeholder="Название поля">
+                                <input type="text" id="d_inp_plac" name="d_inp_plac" class="valid" data-input-type="input_par_plac" value="0" placeholder="Надпись на поле">
+                            </span>
+                        </div>
+                        <input type="hidden" name="input_count" id="input_count" value="2" class="valid" data-input-type="input_count">
+                        <input type="hidden" name="email" id="form_input_email" id="form_input_email" value="0">
+                        <input type="hidden" name="custom" id="form_input_custom" id="form_input_custom" value="0">
                         <a class="btn_next next-step" href="#">Следующий шаг</a>
-                    </div>
+                </div>
             </section>
             <section class="sec9" data-step="9">
                 <div>
@@ -305,18 +292,20 @@
                     <div class="vid video_btn" data-video="lF_C7BvAf_A">
                         <div class="play"></div>
                     </div>
+                    <form class="block" enctype="multipart/form-data" action="#">
+                            <p>Загрузить фото:</p>
+                            <label for="upfile2">
+                                Загрузить
+                            </label>
+                            <input id="upfile2" type="file" name="file">
+                    </form>
                     <div class="block">
                         <p>Ссылка на видео:</p>
-                        <input class="valid" name="bg_video" data-input-type="video" placeholder="Вставьте сюда ссылку на видео youtube">
+                        <input class="valid" type="text" name="bg_video" id="bg_video" data-input-type="bg_video" placeholder="Вставьте сюда ссылку на видео youtube">
                     </div>
-                    <div class="block">
-                        <p>Загрузить фото:</p>
-                        <label for="upfile2">
-                            Загрузить
-                        </label>
-                        <input id="upfile2" type="file">
-                    </div>
-                    <a class="btn_next next-step" href="#">Следующий шаг</a>
+                    <input type="hidden" name="bg_img_d" id="bg_img_d"  class="valid" data-input-type="bg_img_d" value="">
+                    <input type="hidden" name="bg_img_m" id="bg_img_m"  value="">
+                    <a class="btn_next send-step" href="#">Следующий шаг</a>
                 </div>
             </section>
             <section class="sec10" data-step="10">
@@ -333,9 +322,55 @@
                 <div>
                     <h2>Отзывы пользователей DNK ATOM</h2>
                     <div class="slider_w">
-                        <div class="slider">
+                        <div class="slider init_slider">
                             <div class="slid">
                                 <div class="block">
+                                    <div class="block">
+                                        <p>Сайт</p>
+                                        <span>www.site.com</span>
+                                    </div>
+                                    <div class="block">
+                                        <p>Конверсия</p>
+                                        <span>348</span>
+                                    </div>
+                                    <div class="block">
+                                        <p>Цена</p>
+                                        <span>29 000 руб.</span>
+                                    </div>
+                                </div>
+                                <div class="block">
+                                    <div class="vid video_btn" data-video="lF_C7BvAf_A">
+                                        <div class="play"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slid">
+                                <div class="block">
+                                    <div class="block">
+                                        <p>Сайт</p>
+                                        <span>www.site.com</span>
+                                    </div>
+                                    <div class="block">
+                                        <p>Конверсия</p>
+                                        <span>348</span>
+                                    </div>
+                                    <div class="block">
+                                        <p>Цена</p>
+                                        <span>29 000 руб.</span>
+                                    </div>
+                                </div>
+                                <div class="block">
+                                    <div class="vid video_btn" data-video="lF_C7BvAf_A">
+                                        <div class="play"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slid">
+                                <div class="block">
+                                    <div class="block">
+                                        <p>Сайт</p>
+                                        <span>www.site.com</span>
+                                    </div>
                                     <div class="block">
                                         <p>Конверсия</p>
                                         <span>348</span>
@@ -352,12 +387,12 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="prev" href="#"></a>
-                        <a class="next" href="#"></a>
+                        <!-- <a class="prev" href="#"></a> -->
+                        <!-- <a class="next" href="#"></a> -->
                     </div>
                     <div class="block_url">
                         <p>Ссылка на твой сайт:</p>
-                        <a class="url_site" href="#">www.yoursite.com</a>
+                        <a class="url_site" href="#" target="_blank">www.yoursite.com</a>
                     </div>
                     <div class="block_v">
                         <div class="vid video_btn" data-video="lF_C7BvAf_A">
@@ -374,7 +409,7 @@
                     <div class="block_b">
                         <p>Бонусом ты получишь еще 15 крутых
                             <br>примеров продающих видео и офферов</p>
-                        <a class="btn" href="#">Мне не нужны <br>клиенты</a>
+                        <a class="btn btn_hover" href="#">Мне не нужны <br>клиенты</a>
                         <a class="btn" href="#">Мне нужны клиенты. <br>Продолжить за 179 руб.</a>
                     </div>
                 </div>
@@ -393,7 +428,7 @@
                             <div class="play"></div>
                         </div>
                     </div>
-                    <a class="btn_next" href="#">Следующий шаг</a>
+                    <a class="btn_next next-step" href="#">Следующий шаг</a>
                 </div>
             </section>
             <section class="sec13" data-step="13">
@@ -404,7 +439,7 @@
                             <div class="play"></div>
                         </div>
                     </div>
-                    <a class="btn_next" href="#">Привязать CRM систему</a>
+                    <a class="btn_next next-step" href="#">Привязать CRM систему</a>
                 </div>
             </section>
             <section class="sec14" data-step="14">
@@ -417,7 +452,7 @@
                         <p>С этого момента вам открыт на 1 неделю доступ в CRM систему в
                             <br>вашем личном кабинете</p>
                     </div>
-                    <a class="btn_next" href="#">Настроить бизнес процессы</a>
+                    <a class="btn_next next-step" href="#">Настроить бизнес процессы</a>
                 </div>
             </section>
             <section class="sec15" data-step="15">
@@ -427,20 +462,22 @@
                         <div class="play"></div>
                     </div>
                     <div class="block">
-                        <div class="etap">
-                            <p>Первый этап</p>
-                            <a class="btn" href="#">Обработать заявку</a>
-                            <span class="span"></span>
-                        </div>
-                        <div class="etap">
-                            <p>Второй этап</p>
-                            <a class="btn" href="#">Скинуть предложение</a>
-                            <span class="span"></span>
-                        </div>
-                        <div class="etap">
-                            <p>Третий этап</p>
-                            <a class="btn" href="#">Получить оплату</a>
-                            <span class="span"></span>
+                        <div class="etap-wrap">
+                            <div class="etap">
+                                <p>Первый этап</p>
+                                <a class="btn" href="#" contenteditable="true">Обработать заявку</a>
+                                <span class="span"></span>
+                            </div>
+                            <div class="etap">
+                                <p>Второй этап</p>
+                                <a class="btn" href="#" contenteditable="true">Скинуть предложение</a>
+                                <span class="span"></span>
+                            </div>
+                            <div class="etap">
+                                <p>Третий этап</p>
+                                <a class="btn" href="#">Получить оплату</a>
+                                <span class="span"></span>
+                            </div>
                         </div>
                         <a class="plus" href="#">Добавить следующий этап</a>
                     </div>
@@ -590,19 +627,6 @@
                         <span></span>
                     </p>
                 </div>
-                <div class="pop" id="login">
-                    <div>
-                        <div class="close close_p"></div>
-                        <div class="block">
-                            <h2>Войти</h2>
-                            <form action="#">
-                                <input name="mail" type="text" placeholder="Введите Ваш e-mail">
-                                <input name="password" type="text" placeholder="Введите пароль">
-                                <input class="sub" type="submit" value="Войти">
-                            </form>
-                        </div>
-                    </div>
-                </div>
                 <div class="conf-pop">
                     <div class="close close_p">
                     </div>
@@ -694,9 +718,25 @@
                     </div>
                 </div>
             </div>
+            <div class="pop" id="login">
+            <div class="close"></div>
+            <div class="div">
+                <div class="block">
+                    <h2>Войти</h2>
+                    <form action="#" class="login" data-event="login_to_send">
+                        <input name="login" type="text" class="valid" placeholder="Введите Ваш e-mail" data-input-type="textarea">
+                        <input name="password" type="password" class="valid" placeholder="Введите пароль" data-input-type="pass">
+                        <input class="sub" type="submit" value="Войти">
+                    </form>
+                </div>
+            </div>
+        </div>
+
             <div class="back_btn">
                 назад
             </div>
+            <input type="hidden" name="userKey" id="userKey" value="">
+            <input type="hidden" name="pageId" id="pageId" value="">
             <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
             <script src="js/init.js"></script>
             <?php include('../track/body.php'); ?>

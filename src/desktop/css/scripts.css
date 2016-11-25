@@ -138,5 +138,46 @@ body.scroll_blocked .header .login {
     margin-top : 20px;
 }
 .logo_part {
-    /* display: none; */
+    display: none;
+}
+.logo_part_show,.logo_part_hide{display: none;}
+.logo_part_hide .vid{
+    background: green;
+    width: 450px;
+    height: 260px;
+    margin-top: 25px;
+}
+#upfile2{
+    display: none;
+}
+.header .user{
+    padding-right: 36px;
+    text-align: right;
+}
+.header .user_n{
+    display: inline-block;
+}
+.header.h-fixed .user{
+    position:fixed;
+    top:35px;
+    right:00px;
+    z-index: 4;
+}
+.header.h-fixed .user_n{}
+.header .logout{
+    text-align:center;
+    float:none!important;
+}
+.btn_hover{position: relative;}
+
+.btn_hover img{position: absolute;
+left: 50%;
+top: 50%;
+z-index: 2;
+margin-left: -140px;
+margin-top: -252px;
+width: 280px;
+height: 304px;}
+.etap-wrap{
+    width: 100%;
 }

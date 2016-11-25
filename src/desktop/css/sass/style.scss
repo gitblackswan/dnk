@@ -3,7 +3,7 @@ $afont:'Roboto Slab', sans-serif;
 $ifont:'Open Sans', sans-serif;
 $wievport: 980px;
 $dark: #101010;
-$gray: #8799a2;
+$gray: #8799a2; 
 $igray: #94a6ac;
 $blue: #00c8c6;
 $pink: #ff257e;
@@ -161,6 +161,9 @@ a {
         width: 67px;
         height: 56px;
         margin-top: 16px;
+        position:absolute;
+        left:50%;
+        margin-left:-33px;
             &:hover,&:active,&.active{
             }
     }
@@ -812,8 +815,8 @@ label {
     background-image: url(../img/bg_sec7.jpg);
     padding: 68px 0px 81px;
     &>div{
-        margin-top:calc(50vh);
-        transform:translate3d(0,-50%,0);
+        /*margin-top:calc(50vh);
+        transform:translate3d(0,-50%,0);*/
 
 
     }
@@ -868,6 +871,7 @@ label {
     }
     .block:nth-of-type(4){
         margin-top: 29px;
+        margin-bottom: 39px;
     }
     p {        
         color: $white;
@@ -963,6 +967,23 @@ label {
         margin-top: 62px;
     }
     .block {
+        .clear{
+            display:block;
+            width:100%;
+        }
+        .inputs{
+            margin-top:35px;
+            display:none;
+            input{
+                background-color:$inpc;
+                padding:10px;
+                color:$dark;
+                padding-left:20px;
+                margin-left:10px;
+                border-radius:30px;
+                margin-top:-7px;
+            }
+        }
         .r_btn {           
             font-size: 18px;
             font-weight: 700;
@@ -970,6 +991,9 @@ label {
             position: relative;
             padding-left: 45px;
             margin: 35px 35px 0px;
+            &.perm{
+                filter:grayscale(1);
+            }
             &:hover,&:active,&.active{
             }
             &:before {
@@ -988,6 +1012,9 @@ label {
             &:hover:before, &.active:before, , &:active:before{
                 background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAANCAYAAACgu+4kAAABbklEQVQ4T52QP0vDUBTFz20K/gFRxMEPIDqIoCCNbbMUBxHUTtbJSdBu4qKDoiCK+AEUBKfSqegiuAkVsYkJAV0KbkrdnBzEqqHveZNWa7Ut2sALj3vP77x7D6HRT9cHoKCHGuJNfQESmwAd/c/AuuyH9O0wPMnwMXIPM38zsO1WOE4cJFdB1AkpL9D0FsVQ5ImQSimIxQo1VzEMFZDbIIwyzDKZhaAJBIP3LkMwjSV21OAT6who2S+j63QH3psXubfCtZZS/REQUYxoV586gpUZZMczLigs3kdB7kFRenncLX4x7AmldP95kDINVT39Pm0xA1Of42AOvTvRHQNdfGurWIsQhxo6+LlqOURTTzA9W3qtUkecgRpeq5ZT2cCyuiHFOZ8+L6zi2O5ISQg5j1AoX9/A7RrGOO9+wjc/x+vCaby8TiESea4Ge4pfDSOzyxMsc/0WfjGGYS1XC65uYNvtKDgbIJFAIHxTD3Z7H4nsc2nhHzblAAAAAElFTkSuQmCC);            
                 transition: all 0.25s;
+            }
+            span{
+
             }
         }
     }
@@ -1019,25 +1046,30 @@ label {
         }
     }
     .block:nth-of-type(2) {
-        margin-top: 39px;
+        margin-top: 25px;
         p {
             line-height: 19px;
             margin-top: 24px;
             background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAATCAYAAACDW21BAAACRElEQVRIS8WWz08TURDHd1svbegekGjgoKlp01N/QeICemgihAv8FyScDRHj1XgwmqhEEgMJIYRwKhz15FX2IvSH6YkLP9JyKj3UqLWF9TPb3aaReuI1vuRlfry38533Zt7M6uFw+G4oFHqv6/ocU7NtW5MhvIxesrfmrXvyJQPddrVafVwul6uybpqm0Wg0Btlj+3y+ip5IJD7CTLP3K/R3+xtNg3eoyML30nfvczZr2gBzDCfXC4XCfDwevwfQKrop16nneiqVshEOcrncmPvRdYgPe2cY+IWDD6A72DZxYBMqoLcdQMYXPHp4HSTvW+ydwt9kfmPex/YzbL9MJpOfkR/pMAJoFYvFSRWAhOiYENxxbS1Fo9E32Wz2AhwL3bhyQPeEI1zp01gs9lbABBxH9rjSCQcQxsrn80pOCOARN/aBa3wFTjvlXUBOPuHEEFkl4GEgEEhYlvWzO0Tg7CG3ATm+shhyY4etVitdKpW+/xNQ9Qmbzeb/B5Sk6cRQ9ZUGg8ErMexkaR9ieESIrmSpJA3Z25ekkUozzHzC01iGOsW5b+9QKg3v2qs0i4C+E1CpNOjblQaFslqaTqdPyIkhjBe5QhO6RFF53amleGT7/X4l3SKTydyo1WoVQH4AKs1gVwo48gZ0hnlLHv4nmCm82Weh8Xf/61XQvV4pa937cTyEPIp6jatc4DBh4aU1ufte6NLxDcNYQTkr3b27m4tBr+ML7/0R9KKuYxfs36LSLFJpzkUXiUQMivgQfwGX9Xq98gdwSWmnPotuAAAAAABJRU5ErkJggg==)
         }
     }
-    .block:nth-of-type(3) {
-        margin-top: 25px;
+    form.block {
+        margin-top: 39px;
         p {
             margin-top: 18px;
             line-height: 22px;
             background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAWCAYAAADXYyzPAAACOElEQVRIS62WTUhWQRSGs1IXgYi4itD8QcJoY0UobgITwYVCYIIEkqsssNoo5CIlSBBxExZBiiJSEoKgYaC4EvMHCcIwggxdtShDd6bW88rcuHzMd+fevAcevntnzpz3zsyZM1/KsXBWjVsjpDjc/9D/EqZcYW2BXjHoBuxBKpyGz/ARNhwBi+nPhSL4HuRrE77EgLPwG8ZhGK5BIew4hM/Q/wnGzAoldZfwSeiCJshM4tlM+zPX8pn+O/w+TeL7i3ZtRZuE70IPtMO6ZYD2TTPX0oex4zjVwAmLcz5tj+GehEfglHEOE1g+eaD9VA6swhfLwCu0HcBSQt8k71sSfmNmUx9CVcF6oTTBd5H3Fnhv2uU3b56VMys+/0O9KMK1DHgNc/DEiOybj3jIbzno45VYl2EBtE0X4cP/CuuIKFuV4bdBS+g37etzaIDz8A1KjJ9fVGMizVhZWgXa190EUe81nYc1eAvK7GQWSfgrUQahIyCgujrhJij5YhHWLBtBJyDIJNoPyvZYhH8SRee8zyF8n34lWnZcwhMEUoXTPgfZLJ3boAISy4wrifIOroOOi810seiCqYCZuIQVR7X6FjyAF6BLRJYGOmLdpl0lOMgiZbUC6awqa1tBxX7ZRFexyAAVlUegohGrsBcsh4c60JmWqVaPwqZD0OuOPOOQcZ1u/4QHcD0HZSGWyRnV4aC7QbfVih6uwjSoptru46OK+ccX8HJBmt5fH11zqjpZcapYYv2gbQgW/gI0apCIBQjcoAAAAABJRU5ErkJggg==);
         }
     }
-    textarea {
+    input {
         width: 436px;
         height: 66px;
         float: left;
+        background-color: $while;
+        color:$dark;
+        border-radius: 29px;
+        padding-left: 20px;
+        border: 1px solid transparent;
     }
     label {
         width: 220px;
@@ -1094,11 +1126,20 @@ label {
         background-position: 53% 50%;
     }
     .site {
-        background-image: url(../img/site.jpg);  
+        // background-image: url(../img/site.jpg);  
         max-width: 1093px;
         width: 100%;
         height: 683px;
         display: inline-block;
+        position: relative;
+        iframe{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border:none;
+            left:0;
+            top:0;
+        }
     }
         h2:nth-of-type(1) {
             margin-top: 84px;
@@ -1190,8 +1231,8 @@ label {
             background-image: url(../img/line2.png);
             width: 636px;
             height: 118px;
+            margin-top:50px;
             display: inline-block;
-            margin-top: 66px;
             p {
                 display: inline-block;
                 margin-top: -8px;
@@ -1201,7 +1242,8 @@ label {
                 color: $grenu;
                 font-size: 30px;
                 text-decoration: underline;
-                margin-top: 20px;
+                margin-top: 3px;
+                padding: 0 20px;
                 &:hover,&:active,&.active{
                     text-decoration: none;
                 }
@@ -1632,6 +1674,10 @@ label {
         display: inline-block;
         margin-top: 3px;
         float: right;
+            background-color:transparent;
+        &:hover{
+            background-color:transparent;
+        }
     }
     .plus {
         margin-top: 2px;
@@ -1686,7 +1732,7 @@ label {
     }
 }
 .sec17 {
-    background-image: url(../../img/bg_sec17.jpg);
+    background-image: url(../img/bg_sec17.jpg);
     padding: 67px 0px 58px;
     h2 {
         font-size: 48px;
