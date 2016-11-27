@@ -6,11 +6,11 @@
         <meta name="viewport" content="width=1200">
         <title>ДНК</title> 
         <!-- <link type="image/x-icon" href="favicon.ico" rel="shortcut icon"> -->
-        <script>
+        <!-- <script>
             if (screen.width <= 750) {
                 document.location = "../mobile/" + document.location.search;
             }
-        </script>
+        </script> -->
         <style>
             <?php include('css/head.css');
             ?>
@@ -22,7 +22,7 @@
         <?php include('../track/head.php'); ?>
     </head>
     <body>
-        <div id="maket"></div>
+        <!-- <div id="maket"></div> -->
         <div class="header">
             <a class="btn_menu_open" href="#"></a>
             <a class="logo" href="#"></a>
@@ -31,7 +31,6 @@
                 <p class="user_n">Марина Хлебникова</p>
                 <a class="logout" href="#">Выйти</a>
             </div>
-        </div>
         </div>
         <div id="slide-viewport">
             <section class="sec1 active_ste_slide" data-step="1">
@@ -276,13 +275,13 @@
                             <div class="clear"></div>
                             <a class="r_btn check" data-check="custom" href="#">Текстовое поле</a>
                             <span class="inputs">
-                                <input type="text" id="d_inp_name" name="d_inp_name" data-input-type="input_par_name" value="0" class="valid" placeholder="Название поля">
-                                <input type="text" id="d_inp_plac" name="d_inp_plac" class="valid" data-input-type="input_par_plac" value="0" placeholder="Надпись на поле">
+                                <input type="text" id="form_custom_name" name="form_custom_name" data-input-type="input_par_name" value="0" class="valid" placeholder="Название поля">
+                                <input type="text" id="form_custom_plac" name="form_custom_plac" class="valid" data-input-type="input_par_plac" value="0" placeholder="Надпись на поле">
                             </span>
                         </div>
                         <input type="hidden" name="input_count" id="input_count" value="2" class="valid" data-input-type="input_count">
-                        <input type="hidden" name="email" id="form_input_email" id="form_input_email" value="0">
-                        <input type="hidden" name="custom" id="form_input_custom" id="form_input_custom" value="0">
+                        <input type="hidden" name="email" id="form_input_email" value="0">
+                        <input type="hidden" name="custom" id="form_input_custom" value="0">
                         <a class="btn_next next-step" href="#">Следующий шаг</a>
                 </div>
             </section>
@@ -417,12 +416,13 @@
             <section class="sec12" data-step="12">
                 <div>
                     <h2>Привязка сайта к вашему домену</h2>
-                    <div class="block">
+                    <!-- <div class="block">
                         <a class="btn" href="#">Я знаю как это делать</a>
                         <a class="btn" href="#">Есть домен, не знаю как привязать</a>
                         <a class="btn" href="#">Нет домена</a>
                     </div>
-                    <p>Добавьте А запись: ХХХ.ХХ.Х.ХХ к вашему домену</p>
+                    <p>Добавьте А запись: ХХХ.ХХ.Х.ХХ к вашему домену</p> -->
+                    <input type="text" name="domian" value="" placeholder="">
                     <div class="block">
                         <div class="vid video_btn" data-video="lF_C7BvAf_A">
                             <div class="play"></div>

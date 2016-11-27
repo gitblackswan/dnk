@@ -1056,8 +1056,8 @@ function send_full_data(callback) {
 
     var form_email = $('#form_input_email').val();
     var form_custom = $('#form_input_custom').val();
-    var form_custom_name = $('#d_inp_name').val();
-    var form_custom_plac = $('#d_inp_plac').val();
+    var form_custom_name = $('#form_custom_name').val();
+    var form_custom_plac = $('#form_custom_plac').val();
 
     var userKey = $('#userKey').val();
     var pageId = $('#pageId').val();
@@ -1216,7 +1216,7 @@ function get_user_name(hash) {
         $('.user').show();
         $('a.login').hide();
         console.log('USER_KEY = ', hash);
-        setCookie('dnk_user', hash, 1);
+        setCookie('dnk_user', hash, 0);
         console.log('SET_COOKIE');
         
 
@@ -1289,10 +1289,15 @@ function validate_user(email, hash) {
 
         paste_values(data.response.content);
 
+        history.pushState('', document.title, './');
+
         //console.log('refresh coockie - ', hash, email);
         //setCookie('dnkatom_code', hash, 1);
         //setCookie('dnkatom_email', email, 1);
 
+
+    },false,function(){
+        history.pushState('', document.title, './');
 
     });
 
@@ -1326,8 +1331,8 @@ console.log(content);
         }
         if (key == 'form_custom' && content[key] != '0') {
             $('.r_btn[data-check="custom"]').trigger('click');
-            $('input[name="d_inp_name"]').val(content['form_custom_name']);
-            $('input[name="d_inp_plac"]').val(content['form_custom_plac']);
+            $('input[name="form_custom_name"]').val(content['form_custom_name']);
+            $('input[name="form_custom_plac"]').val(content['form_custom_plac']);
 
         }
 
@@ -1352,8 +1357,6 @@ console.log(content);
     }
     $('.iph1,.iph2,.iph3').trigger('change');
     $('span.placeholder_p').trigger('click');
-
-    history.pushState('', document.title, './');
 
     console.log('values_pasted - ', content);
 
@@ -1784,7 +1787,9 @@ $(document).ready(function() {
         } else {
             $('#content_video').val('').show();
         }
-        go_to_step(7);
+        if ($(this).closest('section').hasClass(active_step_class)) {
+            go_to_step(7);
+        }
 
     });
 
@@ -1802,7 +1807,9 @@ $(document).ready(function() {
             $('.logo_part_show').show();
             $('#logo_img').val('');
         }
-        go_to_step(7);
+        if ($(this).closest('section').hasClass(active_step_class)) {
+            go_to_step(7);
+        }
 
     });
 
@@ -2007,6 +2014,10 @@ $(document).ready(function() {
 
     build_crm_etaps()
 
+});
+
+$(window).resize(function(){
+    calc_vh();
 });
 
 $(window, step_slider_selector).scroll(function() {
