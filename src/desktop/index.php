@@ -173,7 +173,7 @@
                     <div class="block">
                         <p>Адрес Вашей компании:</p>
                         <div class="link">
-                            <input class="valid" name="page_addr" data-input-type="page_addr" type="text" placeholder="Введите город">
+                            <input class="valid" name="page_addr" data-input-type="page_addr" type="text" placeholder="Индекс, Город, Адрес">
                         </div>
                     </div>
                     <a class="btn_next next-step" href="#">Следующий шаг</a>
