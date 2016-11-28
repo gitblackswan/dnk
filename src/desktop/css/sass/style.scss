@@ -35,7 +35,8 @@ $grenu: #1b4c4d;
         max-width: $wievport;
         position: relative;
         z-index: 2;
-        height: 100%;
+        padding: 40px 0;
+        //height: 100%;
         margin: 0 auto;
     }
 }
@@ -140,7 +141,7 @@ a {
     }
 .header {
     position:absolute;
-    top:75px;
+    top:20px;
     left: 0px;
     width: 100%;
     padding: 0 20px;
@@ -250,7 +251,7 @@ a {
     }
 .sec1 {
     background-image: url(../img/bg_sec1.jpg);
-    padding: 193px 0px 137px;
+    padding: 0px 0px 0px;
     h1 {
         width: 100%;
         min-width: 365px;
@@ -328,7 +329,7 @@ a {
 }
 .sec2 {
     background-image: url(../img/bg_sec2.jpg);
-    padding: 20px 0px 20px;
+    padding: 0px 0px 0px;
     h2 {
         color: $white;
     }
@@ -395,7 +396,7 @@ textarea {
     }
 .sec3 {
     background-color: white;
-    padding: 20px 0px 20px;
+    padding: 0px 0px 0px;
     h2 {
         font-size: 48px;
     }
@@ -454,7 +455,7 @@ textarea {
 }
 .sec4 {
     background-image: url(../img/bg_sec4.jpg);
-    padding: 66px 0px 178px;
+    padding: 0px 0px 0px;
     h2 {
     }
     .vid_offer{
@@ -522,7 +523,7 @@ textarea {
     .write_offer {
         background-image: url(../img/line.png);
         width: 100%;
-        height: 368px;
+        background-position: top center;
         margin-top: 93px;
         text-align: center;
         h2 {
@@ -564,7 +565,7 @@ textarea {
 }
 .sec5 {
     background-color: white;
-    padding: 238px 0px 237px;
+    padding: 0px 0px 0px;
     h2 {
         margin-bottom: 40px;
     }
@@ -709,7 +710,7 @@ textarea {
 }
 .sec6 {
     background-image: url(../img/bg_sec6.jpg);
-    padding: 173px 0px 189px;
+    padding: 0px 0px 0px;
     h2 {
         display: none;
     }
@@ -813,7 +814,7 @@ label {
 }
 .sec7 {
     background-image: url(../img/bg_sec7.jpg);
-    padding: 68px 0px 81px;
+    padding: 0px 0px 0px;
     &>div{
         /*margin-top:calc(50vh);
         transform:translate3d(0,-50%,0);*/
@@ -929,7 +930,7 @@ label {
 }
 .sec8 {
     background-color: white;
-    padding: 275px 0px 207px;
+    padding: 0px 0px 0px;
     h2 {
     }
     .block {
@@ -1024,7 +1025,7 @@ label {
 }
 .sec9 {
     background-image: url(../img/bg_sec9.jpg);
-    padding: 207px 0px 206px;
+    padding: 0px 0px 0px;
     h2 {
     }
     .vid {
@@ -1091,7 +1092,7 @@ label {
 }
 .sec10 {
     background-image: url(../img/bg_sec10.jpg);
-    padding: 307px 0px 345px;
+    padding: 0px 0px 0px;
     img {
         display: inline-block;
     }
@@ -1116,7 +1117,7 @@ label {
 
 .sec11 {
     background-color: white;
-    padding: 143px 0px 100px;
+    padding: 0px 0px 0px;
     .laptop {
         background-image: url(../img/laptop.png);
         height: 880px;
@@ -1308,7 +1309,7 @@ label {
 }
 .sec12 {
     background-image: url(../img/bg_sec12.jpg);
-    padding: 198px 0px 186px;
+    padding: 0px 0px 0px;
     h2 {
         font-size: 30px;
         font-weight: 700;
@@ -1360,7 +1361,7 @@ label {
 }
 .sec13 {
     background-image: url(../img/bg_sec13.jpg);
-    padding: 249px 0px 264px;
+    padding: 0px 0px 0px;
     h2 {
         line-height: 60px;
         color: $white;
@@ -1384,7 +1385,7 @@ label {
 }
 .sec14 {
     background-image: url(../img/bg_sec14.jpg);
-    padding: 256px 0px 204px;
+    padding: 0px 0px 0px;
     padding-bottom: 171px;
     h2 {
         
@@ -1628,7 +1629,7 @@ label {
 
 .sec15 {
     background-color: white;
-    padding: 67px 0px 55px;
+    padding: 0px 0px 0px;
     h2 {
     }
     .vid {
@@ -1705,7 +1706,7 @@ label {
 }
 .sec16 {
     background-image: url(../img/bg_sec16.jpg);
-    padding: 176px 0px 184px;
+    padding: 0px 0px 0px;
     h2 {
         font-size: 48px;
         line-height: 60px;
@@ -1733,7 +1734,7 @@ label {
 }
 .sec17 {
     background-image: url(../img/bg_sec17.jpg);
-    padding: 67px 0px 58px;
+    padding: 0px 0px 0px;
     h2 {
         font-size: 48px;
         line-height: 60px;
@@ -1846,7 +1847,7 @@ label {
 }
 .sec18 {
     background-image: url(../img/bg_sec18.jpg);
-    padding: 226px 0px 78px;
+    padding: 0px 0px 0px;
     h2 {
         color: $white;
     }
@@ -1898,7 +1899,7 @@ label {
 }
 .sec19 {
     background-color: white;
-    padding: 69px 0px 61px;
+    padding: 0px 0px 0px;
     h2 {
         font-size: 48px;
         line-height: 60px;
@@ -1987,7 +1988,7 @@ label {
 }
 .sec20 {
     background-image: url(../img/bg_sec20.jpg);
-    padding: 131px 0px 172px;
+    padding: 0px 0px 0px;
     h2 {
         font-size: 48px;
         line-height: 60px;

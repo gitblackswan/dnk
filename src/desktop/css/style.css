@@ -59,7 +59,7 @@ section {
     max-width: 980px;
     position: relative;
     z-index: 2;
-    height: 100%;
+    padding: 40px 0;
     margin: 0 auto; }
 
 .header {
@@ -153,7 +153,7 @@ a {
 
 .header {
   position: absolute;
-  top: 75px;
+  top: 20px;
   left: 0px;
   width: 100%;
   padding: 0 20px; }
@@ -248,7 +248,7 @@ a {
 
 .sec1 {
   background-image: url(../img/bg_sec1.jpg);
-  padding: 193px 0px 137px; }
+  padding: 0px 0px 0px; }
   .sec1 h1 {
     width: 100%;
     min-width: 365px;
@@ -311,7 +311,7 @@ a {
 
 .sec2 {
   background-image: url(../img/bg_sec2.jpg);
-  padding: 20px 0px 20px; }
+  padding: 0px 0px 0px; }
   .sec2 h2 {
     color: white; }
   .sec2 p {
@@ -385,7 +385,7 @@ textarea {
 
 .sec3 {
   background-color: white;
-  padding: 20px 0px 20px; }
+  padding: 0px 0px 0px; }
   .sec3 h2 {
     font-size: 48px; }
   .sec3 h3 {
@@ -434,7 +434,7 @@ textarea {
 
 .sec4 {
   background-image: url(../img/bg_sec4.jpg);
-  padding: 66px 0px 178px; }
+  padding: 0px 0px 0px; }
   .sec4 .vid_offer .vid {
     background-image: url(../img/video_ofer.png);
     margin-top: 40px; }
@@ -479,7 +479,7 @@ textarea {
   .sec4 .write_offer {
     background-image: url(../img/line.png);
     width: 100%;
-    height: 368px;
+    background-position: top center;
     margin-top: 93px;
     text-align: center; }
     .sec4 .write_offer h2 {
@@ -509,7 +509,7 @@ textarea {
 
 .sec5 {
   background-color: white;
-  padding: 238px 0px 237px; }
+  padding: 0px 0px 0px; }
   .sec5 h2 {
     margin-bottom: 40px; }
   .sec5 .block {
@@ -625,7 +625,7 @@ textarea {
 
 .sec6 {
   background-image: url(../img/bg_sec6.jpg);
-  padding: 173px 0px 189px; }
+  padding: 0px 0px 0px; }
   .sec6 h2 {
     display: none; }
   .sec6 .vid {
@@ -704,7 +704,7 @@ label {
 
 .sec7 {
   background-image: url(../img/bg_sec7.jpg);
-  padding: 68px 0px 81px; }
+  padding: 0px 0px 0px; }
   .sec7 > div {
     /*margin-top:calc(50vh);
         transform:translate3d(0,-50%,0);*/ }
@@ -794,7 +794,7 @@ label {
 
 .sec8 {
   background-color: white;
-  padding: 275px 0px 207px; }
+  padding: 0px 0px 0px; }
   .sec8 .block {
     width: 100%; }
     .sec8 .block .block {
@@ -861,7 +861,7 @@ label {
 
 .sec9 {
   background-image: url(../img/bg_sec9.jpg);
-  padding: 207px 0px 206px; }
+  padding: 0px 0px 0px; }
   .sec9 .vid {
     background-image: url(../img/video_fon.png);
     width: 436px;
@@ -909,7 +909,7 @@ label {
 
 .sec10 {
   background-image: url(../img/bg_sec10.jpg);
-  padding: 307px 0px 345px; }
+  padding: 0px 0px 0px; }
   .sec10 img {
     display: inline-block; }
   .sec10 h2 {
@@ -929,7 +929,7 @@ label {
 
 .sec11 {
   background-color: white;
-  padding: 143px 0px 100px; }
+  padding: 0px 0px 0px; }
   .sec11 .laptop {
     background-image: url(../img/laptop.png);
     height: 880px;
@@ -1079,7 +1079,7 @@ label {
 
 .sec12 {
   background-image: url(../img/bg_sec12.jpg);
-  padding: 198px 0px 186px; }
+  padding: 0px 0px 0px; }
   .sec12 h2 {
     font-size: 30px;
     font-weight: 700;
@@ -1114,7 +1114,7 @@ label {
 
 .sec13 {
   background-image: url(../img/bg_sec13.jpg);
-  padding: 249px 0px 264px; }
+  padding: 0px 0px 0px; }
   .sec13 h2 {
     line-height: 60px;
     color: white; }
@@ -1129,7 +1129,7 @@ label {
 
 .sec14 {
   background-image: url(../img/bg_sec14.jpg);
-  padding: 256px 0px 204px;
+  padding: 0px 0px 0px;
   padding-bottom: 171px; }
   .sec14 .vid {
     background-image: url(../img/video_crm_go.png);
@@ -1163,7 +1163,7 @@ label {
     max-width: 980px;
     position: relative;
     z-index: 2;
-    height: 100%;
+    padding: 40px 0;
     margin: 0 auto; }
   .pop .close {
     width: 87px;
@@ -1345,7 +1345,7 @@ label {
 
 .sec15 {
   background-color: white;
-  padding: 67px 0px 55px; }
+  padding: 0px 0px 0px; }
   .sec15 .vid {
     margin-top: 38px;
     background-image: url(../img/video_proc.jpg);
@@ -1404,7 +1404,7 @@ label {
 
 .sec16 {
   background-image: url(../img/bg_sec16.jpg);
-  padding: 176px 0px 184px; }
+  padding: 0px 0px 0px; }
   .sec16 h2 {
     font-size: 48px;
     line-height: 60px;
@@ -1426,7 +1426,7 @@ label {
 
 .sec17 {
   background-image: url(../img/bg_sec17.jpg);
-  padding: 67px 0px 58px; }
+  padding: 0px 0px 0px; }
   .sec17 h2 {
     font-size: 48px;
     line-height: 60px; }
@@ -1514,7 +1514,7 @@ label {
 
 .sec18 {
   background-image: url(../img/bg_sec18.jpg);
-  padding: 226px 0px 78px; }
+  padding: 0px 0px 0px; }
   .sec18 h2 {
     color: white; }
   .sec18 .vid {
@@ -1556,7 +1556,7 @@ label {
 
 .sec19 {
   background-color: white;
-  padding: 69px 0px 61px; }
+  padding: 0px 0px 0px; }
   .sec19 h2 {
     font-size: 48px;
     line-height: 60px; }
@@ -1626,7 +1626,7 @@ label {
 
 .sec20 {
   background-image: url(../img/bg_sec20.jpg);
-  padding: 131px 0px 172px; }
+  padding: 0px 0px 0px; }
   .sec20 h2 {
     font-size: 48px;
     line-height: 60px; }
