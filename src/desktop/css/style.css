@@ -147,17 +147,17 @@ a {
     background-color: #004f4e; }
 
 .block span {
-    font-size: 14px;
-    position: absolute;
-    bottom: 17px;
-    right: 31px;
-    outline: none;
-    border: none;
-    resize: none;
-    font-family: "Open Sans", sans-serif;
-    font-style: italic;
-    color: #94a6ac;
-}
+  font-size: 14px;
+  position: absolute;
+  bottom: 17px;
+  right: 31px;
+  outline: none;
+  border: none;
+  resize: none;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  color: #94a6ac; }
+
 .line {
   width: 129px;
   height: 5px;
