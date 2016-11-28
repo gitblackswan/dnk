@@ -170,7 +170,7 @@ function get_json(type, url, data, funct, disable_cahe, status_ER) {
         }
 
     }
-
+    $('#loading').show();
     $.ajax({
         type: type,
         url: url,
@@ -223,6 +223,7 @@ function get_json(type, url, data, funct, disable_cahe, status_ER) {
             console.log('-------------------------------');
 
 
+            $('#loading').hide();
 
         },
         error: function(xhr) {
@@ -1198,10 +1199,12 @@ function login(wrap, callback) {
 
             close_login();
 
-            $('section[data-step="6"]').remove();
+            //$('section[data-step="6"]').remove();
 
             if (event == 'login_to_send') {
                 go_to_step(7);
+            }else{
+                go_to_step($('.'+active_step_class).attr('data-step'));
             }
 
             get_user_name(data.response.userKey);
@@ -1366,7 +1369,7 @@ console.log(content);
         //console.log(key,':',content[key]);
     }
     $('.iph1,.iph2,.iph3').trigger('change');
-    $('span.placeholder_p').trigger('click');
+    $('span.placeholder_p').hide();
 
     console.log('values_pasted - ', content);
 
@@ -1612,6 +1615,7 @@ function calculate_vh(){
 $(document).ready(function() {
     hfixed();
     init_step_slider_height();
+    calculate_vh();
     init_user();
     //____________
 

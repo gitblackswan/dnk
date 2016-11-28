@@ -732,6 +732,7 @@
             </div>
         </div>
 
+        <div id="loading"><div></div></div>
             <div class="back_btn">
                 назад
             </div>
