@@ -84,7 +84,8 @@ section {
 
 .block {
   text-align: center;
-  font-size: 0; }
+  font-size: 0;
+  position: relative; }
   .block > * {
     font-size: 1rem;
     display: inline-block;
@@ -145,6 +146,18 @@ a {
   .etap .btn:hover, .etap .btn:active, .etap .btn.active, .btn_next:hover, .btn_next:active, .btn_next.active {
     background-color: #004f4e; }
 
+.block span {
+    font-size: 14px;
+    position: absolute;
+    bottom: 17px;
+    right: 31px;
+    outline: none;
+    border: none;
+    resize: none;
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    color: #94a6ac;
+}
 .line {
   width: 129px;
   height: 5px;
@@ -381,7 +394,8 @@ textarea {
   padding: 23px 34px 10px;
   border: 1px solid transparent;
   color: #101010;
-  transition: all 0.25s; }
+  transition: all 0.25s;
+  position: relative; }
   textarea:hover, textarea:active, textarea.active {
     transition: all 0.25s; }
 
