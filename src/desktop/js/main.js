@@ -570,10 +570,12 @@ function live_validation_input(elem) {
 
         var num = input_obj.max_length - $(elem).val().length;
 
-        if (num>=0) {
-            $(elem).next('span').html('Осталось символов: '+num);
-        }else{
-            $(elem).next('span').html('Превышено количество символов на: '+num*(-1));
+        if (!$(elem).hasClass('iph1') && !$(elem).hasClass('iph2') && !$(elem).hasClass('iph3')) {
+            if (num>=0) {
+                $(elem).next('span').html('Осталось символов: '+num);
+            }else{
+                $(elem).next('span').html('Превышено количество символов на: '+num*(-1));
+            }
         }
 
 
