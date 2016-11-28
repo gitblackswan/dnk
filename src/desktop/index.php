@@ -98,21 +98,18 @@
                                     <div class="play"></div>
                                 </div>
                                 <textarea name="what_sell" data-input-type="what_sell" placeholder="Что Вы продаете?"></textarea>
-                                <span></span>
                             </div>
                             <div class="block">
                                 <div class="vid video_btn" data-video="tlxs_mG-8nA">
                                     <div class="play"></div>
                                 </div>
                                 <textarea name="what_buy" data-input-type="what_buy" placeholder="Что покупает клиент?"></textarea>
-                                <span></span>
                             </div>
                             <div class="block">
                                 <div class="vid video_btn" data-video="tlxs_mG-8nA">
                                     <div class="play"></div>
                                 </div>
                                 <textarea name="what_take" data-input-type="what_take" placeholder="Что получает клиент?"></textarea>
-                                <span></span>
                             </div>
                         </div>
                         <div class="of_for_block">
@@ -266,9 +263,7 @@
                         </div>
                         <div class="block">
                             <textarea id="form_head" name="form_head" class="valid" data-input-type="form_head" placeholder="Введите причину, по которой вам будут оставлять заявки"></textarea>
-                            <span></span>
                             <textarea id="form_button" name="form_button" class="valid" data-input-type="form_button" placeholder="Введите надпись на кнопке"></textarea>
-                            <span></span>
                         </div>
                         
                     </div> 
@@ -517,17 +512,14 @@
                         <div class="zapros">
                             <p>Запрос №1</p>
                             <textarea name="discr" data-input-type="descriptor" placeholder="Введите текст"></textarea>
-                            <span></span>
                         </div>
                         <div class="zapros">
                             <p>Запрос №2</p>
                             <textarea name="discr" data-input-type="descriptor" placeholder="Введите текст"></textarea>
-                            <span></span>
                         </div>
                         <div class="zapros">
                             <p>Запрос №3</p>
                             <textarea name="discr" data-input-type="descriptor" placeholder="Введите текст"></textarea>
-                            <span></span>
                         </div>
                     </div>
                     <div class="block">
@@ -547,9 +539,7 @@
                         <a class="btn_logic plus" href="#">Добавить логику</a>
                         <div class="block_text">
                             <textarea name="discr" data-input-type="descriptor" placeholder="Введите текст"></textarea>
-                            <span></span>
                             <textarea name="discr" data-input-type="descriptor" placeholder="Введите текст"></textarea>
-                            <span></span>
                         </div>
                     </div>
                     <a class="btn_next" href="#">Оформить объявление</a>
