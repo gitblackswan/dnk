@@ -91,7 +91,7 @@ function validateEmail(email) {
 
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
-    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000)+300 * 60 * 1000);
     var expires = "expires=" + d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
@@ -1452,8 +1452,8 @@ function upload_img(elem, type, callback) {
                     //var file = {
                     // data:data
                     //}
-                    console.log('FormData:,', data);
-                    console.log('FormData->File:,', data.get('file'));
+                    //console.log('FormData:,', data);
+                    //console.log('FormData->File:,', data.get('file'));
                     get_json('post', upload_url, data, callback, true, callback);
 
 

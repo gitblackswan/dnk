@@ -874,11 +874,15 @@ label {
     .btn_url {
         font-size: 14px;
         font-weight: 700;
-        text-decoration: underline;
+        background: #00c8c6;
+        color: white;
+        text-decoration: none;
+        padding: 10px 30px;
+        border-radius: 30px;
         margin-top: 39px;
         @include trans();
         &:hover,&:active,&.active{
-            text-decoration: none;
+            background-color: #004f4e;
         }
     }
     .line {

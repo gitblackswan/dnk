@@ -754,13 +754,17 @@ label {
   .sec7 .btn_url {
     font-size: 14px;
     font-weight: 700;
-    text-decoration: underline;
+    background: #00c8c6;
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 30px;
     margin-top: 39px;
     transition: all 0.25s; }
     .sec7 .btn_url:hover, .sec7 .btn_url:active, .sec7 .btn_url.active {
       transition: all 0.25s; }
     .sec7 .btn_url:hover, .sec7 .btn_url:active, .sec7 .btn_url.active {
-      text-decoration: none; }
+      background-color: #004f4e; }
   .sec7 .line {
     margin-top: 48px; }
   .sec7 h2:nth-of-type(2) {
