@@ -567,6 +567,16 @@ function live_validation_input(elem) {
 
     if (input_obj.type_of_input == 'textarea' || input_obj.type_of_input == 'phonepart' || input_obj.type_of_input == 'email' || input_obj.type_of_input == 'pass' || input_obj.type_of_input == 'video' || input_obj.type_of_input == 'input_par') {
 
+        var num = input_obj.max_length - $(elem).val().length;
+
+        if (num>=0) {
+            $(elem).next('span').html('Осталось символов: '+num);
+        }else{
+            $(elem).next('span').html('Превышено количество символов на: '+num*(-1));
+        }
+
+
+
         if (inp_value.length > input_obj.max_length) {
 
             $(elem).addClass('error-input').addClass('error-over');
@@ -1144,13 +1154,13 @@ function init_slider(selector, slideWidth, callback) {
 function open_menu() {
     var to_top = $('.header .login').offset().top - $(window).scrollTop();
     $('#menu').addClass('opened');
-    $('body').removeAttr('style').addClass('scroll_blocked');
+    //$('body').removeAttr('style').addClass('scroll_blocked');
     $('#menu .close').css('top', to_top + 'px');
 }
 
 function close_menu() {
     $('#menu').removeClass('opened');
-    $('body').removeClass('scroll_blocked');
+    //$('body').removeClass('scroll_blocked');
 }
 
 function open_login() {

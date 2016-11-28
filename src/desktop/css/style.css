@@ -249,6 +249,8 @@ a {
 .sec1 {
   background-image: url(../img/bg_sec1.jpg);
   padding: 0px 0px 0px; }
+  .sec1 > div {
+    padding-top: 140px; }
   .sec1 h1 {
     width: 100%;
     min-width: 365px;
@@ -1215,7 +1217,9 @@ label {
 .pop#menu {
   position: fixed;
   top: 0;
-  left: -100%;
+  left: -600px;
+  width: 600px;
+  min-width: 0px;
   transition: left 0.25s;
   height: 100vh !important;
   overflow: auto;
@@ -1227,18 +1231,24 @@ label {
   .pop#menu > div.close {
     padding: 0;
     height: 87px !important;
-    right: 36px;
-    transition: background-color 0.25s; }
+    left: 20px;
+    right: initial;
+    transition: background-color 0.25s;
+    position: fixed;
+    z-index: 4; }
   .pop#menu .block {
     display: inline-block;
-    width: 100%; }
+    width: 100%;
+    text-align: left;
+    padding-left: 105px;
+    padding-right: 20px; }
     .pop#menu .block a {
-      font-size: 27px;
+      font-size: 24px;
       font-weight: 700;
-      line-height: 70px;
+      line-height: 50px;
       border-radius: 36px;
       color: #afafaf;
-      padding: 0px 45px;
+      padding: 0px 15px;
       margin: 5px 0px; }
       .pop#menu .block a.allowed {
         color: white; }
